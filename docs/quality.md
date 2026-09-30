@@ -1,6 +1,6 @@
-# 测试与 CI 计划 · 待评审
+# 测试与 CI
 
-已实现共享模块测试与本地签名构建脚本，当前 56 项共享测试及 AppKit 共享生命周期检查通过；原生设置已有部分手工验收，具体证据见 [验证清单](development/v1-verification.md)。尚无 CI workflow、runner 或分支保护，未上传签名凭证；不得宣称 CI 已生效。
+已实现共享模块测试与本地签名构建脚本，当前 56 项共享测试及 AppKit 共享生命周期检查通过；原生设置已有部分手工验收，具体证据见 [验证清单](development/v1-verification.md)。2026-09-30 已获授权增加 `.github/workflows/swift-ci.yml`；远端执行结果须单独核验，尚未配置分支保护。
 
 ## 测试矩阵
 
@@ -26,3 +26,14 @@
 - 失败阻止合并；不稳定测试必须跟踪责任与修复期限，不长期忽略。
 
 PR 必查：需求与测试映射、失败提示、配置迁移、无敏感信息。发布必查：兼容矩阵记录系统/芯片/版本/结论；已知限制、回滚与数据保留方案、安装升级、支持语言。日志及测试产物检查隐私后再上传。
+
+## 当前 GitHub Actions
+
+- 触发：main 与 codex/** 分支 push、面向 main 的 PR，以及手动运行。
+- 环境：macos-15 ARM64，Xcode 26.1.1，Swift 6 语言模式；只读仓库权限，checkout 不保留凭证。工具链与当前本机构建一致。
+- 检查：受限文件入库检查、Swift 包测试、AppKit 共享生命周期检查、本地化生成一致性，以及主应用/Finder 扩展/XPC 助手的无签名 Release 构建。
+- 无签名 CI 不运行需要签名认证的 XPC 探针，也不安装 Finder 扩展；这些仍由本机验收覆盖。
+- 不执行打包、安装、签名、公证或 Release 操作，不上传 DMG、应用、证书、日志附件或其他构建产物。失败时仅在 job 日志中输出无签名构建日志末尾。
+- workflow 失败会返回失败检查；是否强制阻止合并取决于另行配置的分支保护，当前没有启用。
+
+Runner 与 Xcode 可用性依据 [GitHub runner image 清单](https://github.com/actions/runner-images/blob/main/images/macos/macos-15-arm64-Readme.md)，checkout 固定为官方 v7.0.1 的完整提交 SHA。
