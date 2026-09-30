@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Clickport 是为 Mac 设计的 Finder 右键工具。复制路径、选择应用打开、从模板新建文件，让常用操作更顺手。">
+<meta name="theme-color" content="#f5f5f7">
+<title>Clickport — 让右键，更顺手。</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳至主要内容</a>
+<header class="header"><a class="brand" href="#"><span class="logo" aria-hidden="true">↗</span>Clickport</a><nav aria-label="主导航"><a href="#features">功能</a><a href="../ui/wireframes.html">交互演示 ↗</a><a href="#start">开始体验</a></nav></header>
+<main id="main">
+<section class="hero">
+<div class="hero-copy"><span class="eyebrow"><i></i> 为 macOS 而设计 · V1 本地试用中</span><h1>让右键，<br><span>更顺手。</span></h1><p class="lead">复制路径、用熟悉的应用打开、从模板新建文件。<br class="wide">把每天重复的操作，放到 Finder 右键里。</p><div class="buttons"><a class="button primary" href="../ui/wireframes.html">试试交互演示 <span aria-hidden="true">↗</span></a><a class="button secondary" href="#features">了解功能 ↓</a></div><p class="caption">浏览器里即可体验设计，无需安装。所有文件操作均为模拟。</p></div>
+<div class="scene" aria-label="Finder 右键菜单设计示意">
+<div class="scene-bar"><span class="dots" aria-hidden="true">● ● ●</span><span>项目文件夹</span><span>⌘</span></div>
+<div class="scene-body"><div class="document"><span class="paper" aria-hidden="true">Aa</span><span>灵感.md</span></div><div class="mock-menu"><div class="mock-row active">复制文件路径</div><hr><div class="mock-row">打开方式 <span>›</span></div><div class="mock-row">新建文件 <span>›</span></div><div class="mock-row">文件操作 <span>›</span></div><div class="mock-row">目录快捷入口 <span>›</span></div></div><div class="scene-note">常用操作，就在手边。</div></div>
+<div class="scene-footer">界面设计示意 · 实际菜单由 macOS 与配置决定</div></div>
+</section>
+<div class="platform"><span>macOS 15.0+</span><span>Swift + SwiftUI</span><span>Finder 原生扩展</span><span>MIT 许可</span></div>
+<section id="features" class="section"><div class="section-heading"><span class="eyebrow">日常小事，少走几步</span><h2>从选中文件，到完成操作。</h2><p>在文件、文件夹和桌面空白处，展示适合当前场景的入口。</p></div><div class="features">
+<article><span class="feature-icon">⌘</span><h3>路径，随手复制</h3><p>复制选中文件与文件夹的路径，也可以在空白处复制当前目录路径。</p><span class="detail">文件 · 多选 · 当前目录</span></article>
+<article><span class="feature-icon">↗</span><h3>用你的应用打开</h3><p>添加常用应用。高级使用场景可配置启动参数和环境变量。</p><span class="detail">编辑器 · 终端 · 其他应用</span></article>
+<article><span class="feature-icon">＋</span><h3>新文件，从这里开始</h3><p>直接创建文本、Markdown 和 JSON。Office / iWork 使用你导入的有效模板。</p><span class="detail">内置类型 · 自定义模板</span></article>
+<article><span class="feature-icon">☷</span><h3>让菜单适合你</h3><p>选择最多 5 个第一层快捷操作，调整分组顺序，添加常用目录入口。</p><span class="detail">快捷操作 · 分组排序 · 目录</span></article>
+</div></section>
+<section class="demo section"><div><span class="eyebrow">先点点看</span><h2>不安装，也能看懂。</h2><p>切换 Finder 场景，展开右键子菜单，浏览七个设置模块。还可以切换深浅色，看看你习惯的样子。</p><a class="text-link" href="../ui/wireframes.html">打开完整交互设计稿 →</a></div><div class="settings-preview" aria-label="设置分类示意"><div class="settings-sidebar"><span class="selected">通用</span><span>打开方式</span><span>文件操作</span><span>新建文件</span><span>目录快捷入口</span><span>右键菜单</span><span>关于</span></div><div class="settings-content"><h3>通用</h3><div class="setting-row">登录时启动 <span class="toggle off"></span></div><div class="setting-row">显示菜单栏图标 <span class="toggle"></span></div><p>熟悉的 Mac 设置方式。</p><small>静态示意，完整交互请打开设计稿。</small></div></div></section>
+<section id="start" class="section start"><span class="eyebrow">当前进度</span><h2>V1 已进入本地体验。</h2><p>核心功能已实现，正在通过实际使用打磨细节。<br>完整实机验收与正式发行尚未完成。</p><div class="release-grid"><div><span class="status">当前</span><h3>本地构建与试用</h3><p>源码提供构建、测试、安装和 DMG 打包脚本。当前验证以 Apple Silicon 为主。</p></div><div><span class="status later">后续</span><h3>DMG 与 Homebrew</h3><p>稳定并完成发行验证后再提供。当前没有公开安装包或可用的 Homebrew 安装命令。</p></div></div></section>
+<section class="section roadmap"><div><span class="eyebrow">下一步</span><h2>先把日常操作做好。</h2></div><p>根据 V1 体验反馈继续改进。批量重命名、压缩、图片转换、快捷指令与脚本扩展列入后续评估；AI 文件处理单独评审。</p></section>
+<section class="faq section"><h2>你可能想了解</h2><details><summary>网页演示会访问我的文件吗？</summary><p>不会。设计稿使用示例数据，按钮模拟操作结果；刷新后恢复初始状态。网页演示不等于原生功能验收。</p></details><details><summary>Mac 上需要开启什么权限？</summary><p>原生应用需要启用 Finder 扩展，并按需授权操作目录。新建文件后定位文件，V1 不依赖辅助功能自动进入重命名。</p></details><details><summary>现在能添加自己的脚本吗？</summary><p>V1 支持配置应用、模板、目录及已有快捷操作。任意脚本、插件与快捷指令执行属于后续规划。</p></details></section>
+</main><footer><a class="brand" href="#">Clickport</a><p>让文件操作回到顺手的位置。</p><span>V1 本地试用 · 本页为产品预览</span></footer>
+</body></html>
