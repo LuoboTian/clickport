@@ -41,7 +41,8 @@ final class ClickportFinderExtension: FIFinderSync {
                 parent.addItem(item)
             }
             for action in plan.shortcuts { append(action, to: menu) }
-            if !plan.shortcuts.isEmpty { menu.addItem(.separator()) }
+            // Finder serializes extension separators as blank rows on some macOS versions.
+            // Keep shortcuts and submenu entries contiguous.
             for section in plan.sections where !section.actions.isEmpty {
                 let titles: [MenuGroup: String] = [.applications: "打开方式", .templates: "新建文件", .operations: "文件操作", .directories: "目录快捷入口"]
                 let child = NSMenu(title: L10n.text(titles[section.group] ?? "Clickport")); child.autoenablesItems = false
