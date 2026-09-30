@@ -9,6 +9,7 @@ final class SystemActions: NSObject, NSSharingServiceDelegate {
         let leases: [URL]
         let onFailure: (Error) -> Void
     }
+    private let launchHelper = LaunchHelperClient()
     private var sharingSessions: [ObjectIdentifier: SharingSession] = [:]
     private let makeSharingService: () -> NSSharingService?
     private let activateForSharing: () -> Void
@@ -34,6 +35,15 @@ final class SystemActions: NSObject, NSSharingServiceDelegate {
     }
     /// Returns whether LaunchServices reused an already running process.
     func open(_ urls: [URL], with entry: ApplicationEntry) async throws -> Bool {
+        if !entry.arguments.isEmpty || !entry.environment.isEmpty {
+            do { return try await launchHelper.open(urls, with: entry) }
+            catch let failure as LaunchFailure {
+                let message = failure == .unknown
+                    ? "启动结果无法确认，请检查目标应用后再重试。"
+                    : "启动助手未能完成请求，请检查应用位置与本机签名。"
+                throw ConfigurationError.invalid(L10n.text(message))
+            }
+        }
         let existingProcesses = Set(NSWorkspace.shared.runningApplications.map(\.processIdentifier))
         let options = NSWorkspace.OpenConfiguration()
         options.arguments = entry.arguments

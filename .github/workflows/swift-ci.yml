@@ -1,0 +1,67 @@
+name: Swift CI
+
+'on':
+  push:
+    branches: [main, 'codex/**']
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: swift-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  swift-checks:
+    name: Swift tests and unsigned macOS build
+    runs-on: macos-15
+    timeout-minutes: 20
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.1.1.app/Contents/Developer
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Check tracked files
+        run: |
+          forbidden=$(git ls-files -- '*.dmg' '*.p12' '*.pfx' '*.pem' '*.cer' '*.der' '*.p8' '*.mobileprovision' '*.provisionprofile' '*.keychain' '*.keychain-db' '*.app/**' '*.appex/**')
+          if [[ -n "$forbidden" ]]; then
+            echo '::error::Tracked build products or signing material are not allowed.'
+            printf '%s\n' "$forbidden"
+            exit 1
+          fi
+          git diff --check
+
+      - name: Show toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Test shared Swift package
+        run: bash Scripts/test.sh
+
+      - name: Test AppKit sharing lifecycle
+        run: bash Scripts/test-appkit.sh
+
+      - name: Check localization generation
+        run: |
+          python3 Scripts/generate-localizations.py
+          git diff --exit-code -- Apps/Clickport/Resources Packages/ClickportCore/Sources/ClickportCore/Resources docs/ui/localization-pending.md
+
+      - name: Build application, Finder extension and launch helper
+        run: bash Scripts/build.sh Release --unsigned
+
+      - name: Print unsigned build failures
+        if: failure()
+        run: |
+          if [[ -f build/build.log ]]; then
+            tail -n 200 build/build.log
+          fi

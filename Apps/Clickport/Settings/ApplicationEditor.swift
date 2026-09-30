@@ -44,7 +44,7 @@ struct ApplicationEditor: View {
                     Text("能否启动新实例以及如何处理参数，由目标应用决定。").font(.caption).foregroundStyle(.secondary)
                     Divider()
                     Text("启动参数").font(.headline)
-                    Label("当前开发版本暂不支持传递启动参数和环境变量，已填写的配置会保留。", systemImage: "exclamationmark.triangle")
+                    Label("启动参数和环境变量由内置助手传递，仅对新启动的进程生效。", systemImage: "info.circle")
                         .font(.caption).foregroundStyle(.secondary)
                     ForEach($arguments) { $argument in
                         HStack {

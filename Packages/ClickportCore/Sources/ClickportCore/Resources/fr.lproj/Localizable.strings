@@ -38,7 +38,10 @@
 "右键菜单中的文件操作" = "Actions du menu contextuel";
 "同名文件过多，请更改目标目录" = "Trop de fichiers portent ce nom. Choisissez un autre dossier.";
 "启动与入口" = "Démarrage et accès";
+"启动助手未能完成请求，请检查应用位置与本机签名。" = "L’assistant de lancement n’a pas pu terminer la demande. Vérifiez l’emplacement et la signature locale.";
 "启动参数" = "Arguments de lancement";
+"启动参数和环境变量由内置助手传递，仅对新启动的进程生效。" = "L’assistant intégré transmet les arguments et les variables d’environnement aux nouveaux processus.";
+"启动结果无法确认，请检查目标应用后再重试。" = "Le résultat du lancement est inconnu. Vérifiez l’application avant de réessayer.";
 "启用" = "Activé";
 "复制当前文件夹路径" = "Copier le chemin du dossier actuel";
 "复制所选项路径" = "Copier les chemins sélectionnés";
@@ -57,6 +60,7 @@
 "将在当前项目处理结束后停止…" = "Arrêt après l’élément en cours…";
 "将恢复菜单分组顺序和复制路径快捷入口，替换当前未保存的菜单更改。应用、模板和目录列表会保留。" = "Rétablit l’ordre des groupes et le raccourci Copier le chemin, en remplaçant les modifications non enregistrées. Les listes d’apps, de modèles et de dossiers sont conservées.";
 "将恢复通用选项和操作开关，关闭登录启动，清除自定义应用、目录和模板引用。个人文件和已保存的目录授权将保留。" = "Réinitialise les réglages et actions, désactive l’ouverture à la connexion et efface les références personnalisées aux apps, dossiers et modèles. Les fichiers personnels et autorisations de dossiers sont conservés.";
+"已交给运行中的应用；启动参数和环境变量只在新进程启动时生效。" = "Transmis à l’application en cours. Les arguments et les variables d’environnement ne s’appliquent qu’au démarrage d’un nouveau processus.";
 "已创建文件" = "Fichier créé";
 "已取消导入" = "Import annulé";
 "已取消操作" = "Action annulée";
@@ -66,14 +70,12 @@
 "已有 Clickport 实例正在运行，请退出旧版本后重新打开" = "Une autre instance de Clickport est ouverte. Quittez-la et rouvrez cette version.";
 "已请求使用应用打开" = "Ouverture avec l’application demandée";
 "已请求使用应用打开；复用了已有进程，启动参数和环境变量可能未生效。" = "L’ouverture a été demandée avec un processus existant. Les arguments de lancement et les variables d’environnement peuvent ne pas avoir été appliqués.";
-"已请求使用应用打开；此开发版本尚不能传递启动参数和环境变量。" = "Ouverture demandée dans l’application ; cette version de développement ne transmet pas encore les arguments ni les variables d’environnement.";
 "已请求打开目录" = "Ouverture du dossier demandée";
 "已请求隔空投送，请在系统面板中继续" = "AirDrop demandé. Continuez dans le panneau système.";
 "已选择多个项目，请明确选择一个新建目录。" = "Plusieurs éléments sont sélectionnés. Choisissez un dossier de destination pour le nouveau fichier.";
 "应用已移动或卸载，请在打开方式中重新选择" = "L’app a été déplacée ou supprimée. Sélectionnez-la à nouveau dans Ouvrir avec.";
 "建议保留 1–3 项；来源关闭后自动隐藏，永久删除不能加入快捷操作。" = "Gardez 1 à 3 raccourcis pour un menu compact. Les sources désactivées sont masquées. La suppression définitive ne peut pas être ajoutée.";
 "当前为本地开发构建，尚未完成 V1 验收。" = "Version de développement locale. La validation de V1 n’est pas terminée.";
-"当前开发版本暂不支持传递启动参数和环境变量，已填写的配置会保留。" = "Cette version de développement ne transmet pas encore les arguments ni les variables d’environnement. Votre configuration sera conservée.";
 "当前目录不可用" = "Le dossier actuel est indisponible.";
 "当前目标无法使用隔空投送" = "AirDrop n’est pas disponible pour ces éléments.";
 "当前通过 Finder 定位新文件，不需要辅助功能权限。" = "Les nouveaux fichiers sont affichés dans Finder. Aucune autorisation d’accessibilité n’est requise.";

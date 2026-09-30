@@ -5,7 +5,7 @@
 | 需求 | 当前证据 | 仍需完成或验证 |
 | --- | --- | --- |
 | FR-01 | 原生应用条目配置；实际接收器收到全部 5 个选中 URL；应用移动报错、重选修复及原快捷入口打开通过；同标识多安装位置选择与复用通过 | 空白处终端/编辑器打开 |
-| FR-02 | 配置可保存；实际接收器参数和环境变量为空，验收失败 | 沙盒架构取舍待用户确认；修复后复测新实例与已有实例 |
+| FR-02 | 内嵌 XPC 助手已接入；沙盒探针收到全部参数、环境变量和多文件；产品 Finder 实测中文参数、环境变量和文件通过；错误身份被拒绝，复用识别通过 | 中断、超时、其他应用、外置卷及兼容矩阵 |
 | FR-03 | Finder 单选、多选及窗口空白目录复制通过；特殊字符保持原值 | 实际桌面空白上下文 |
 | FR-04 | 默认关闭；12 个隔离目标完整清单、滚动与取消通过，原文件保留 | 部分失败和永久删除执行实测；长任务响应 |
 | FR-05 | 真实隐藏/恢复、直接子项不递归通过；三项中一项目标失效仍完成其余两项并准确报错 | 权限拒绝及其他文件系统场景 |
@@ -16,11 +16,11 @@
 | FR-10 | 隐藏图标后重开设置、宿主退出后 Finder 恢复入口通过；请求隔离有测试 | 菜单打开至点击之间宿主退出的真实竞态 |
 | FR-11 | 精确授权、重启保留、撤销及再次请求取消通过；目录移动后显示当前路径和书签过期提示 | 离线及其他卷、系统隐私拒绝 |
 | FR-12 | 登录项实际注册/注销通过；有效配置后台导入提示、无效导入保留原配置、配置与诊断日志原生导出、重置及导入恢复通过 | 实际重新登录启动、有效跨机器导入、带授权与启用登录项时的重置 |
-| FR-13 | 214 条五语言文案；设置列表按钮包含操作对象，原生辅助功能树已核对；本地签名、替换安装、DMG 校验已有记录 | 五语言布局、完整键盘/VoiceOver、深浅色、最低系统、其他芯片及正式发行 |
+| FR-13 | 216 条五语言文案；设置列表按钮包含操作对象，原生辅助功能树已核对；本地签名、替换安装、DMG 校验已有记录 | 五语言布局、完整键盘/VoiceOver、深浅色、最低系统、其他芯片及正式发行 |
 
 ## 当前证据
 
-- 共享模块 54 项测试通过；入口 `Scripts/test.sh`，源码位于 `Packages/ClickportCore/Tests/ClickportCoreTests/CoreTests.swift`。
+- 共享模块 56 项测试通过；入口 `Scripts/test.sh`，源码位于 `Packages/ClickportCore/Tests/ClickportCoreTests/CoreTests.swift`。
 - `bash Scripts/test-appkit.sh` 验证共享适配器权限持有和回调释放，不代替实际 AirDrop 验收。
 - 已安装主应用和 Finder 扩展完成多项真实操作；以下章节保留分阶段证据，早期“尚未启用/验证”的描述仅代表当时状态。
 - 本地开发签名和 DMG 校验不等于公开发行验证。最低 macOS 15、Intel、Developer ID 公证和 Homebrew 真实安装仍未完成；不推送或发布。
@@ -531,3 +531,15 @@ Release 清理构建、本地签名及 DMG 校验通过，生成 `build/packages
 AppKit 共享服务生命周期检查重新通过：延迟释放、重复服务、成功、取消/失败、服务不可用及不支持目标。该检查使用适配器夹具，不代表真实 AirDrop 面板或传输通过。
 
 高级启动助手的具体权限边界再次提交用户选择，尚未收到答复；未加入助手代码或放宽沙盒。V1 目标保持完整，剩余验收仍按顶部矩阵执行。
+
+## FR-02 helper integration and Finder menu spacing — 2026-09-30
+
+- The user approved implementing and integrating the helper on a feature branch. `LaunchHelper.xpc` is embedded in the app. The host and Finder extension remain sandboxed; the helper is not sandboxed. No login item or daemon is registered. macOS manages the on-demand service and its idle lifetime; it need not exit immediately after every call.
+- Both XPC peers enforce the signing team and exact bundle identifier through system code-signing requirements. The team is read from the running process signature, never committed. Unsigned/ad-hoc advanced launches fail closed. Ordinary app opening does not require the helper.
+- Requests are limited to 1 MiB, with bounded argument/variable counts, expiry, an entry digest and original file URLs. Each connection accepts one invocation. The service keeps short-lived request IDs in memory; this is not durable deduplication across service restarts. Disconnection and timeout return an unknown outcome without automatic retries.
+- A sandboxed probe delivered three exact URLs, five arguments including an empty value, Chinese, spaces and literal percent characters, and the configured environment value. Reuse retained the receiver PID, delivered three additional URLs and returned the reused-process flag. The host sandbox entitlement is true; the helper has no sandbox entitlement. Actual argument delivery demonstrates that this path avoids the original sandbox launch limitation.
+- A probe signed with the local certificate but carrying a different bundle identifier was rejected and produced no receiver report. Its first negative test exposed a Swift 6 actor assertion in the XPC error callback. Explicit `@Sendable` callbacks now enter MainActor through a Task; the repeated negative test returns failure without crashing. Completion is keyed by request ID so late callbacks cannot complete a later request.
+- Installed-product test: Finder selected an isolated sample.txt, the host requested access to that test directory, and the receiver got the exact Unicode argument, environment value and file URL. The temporary app entry and test directory grant were removed afterward; receiver processes were closed.
+- Removed the separator between shortcuts and submenus. Actual file and blank-folder menu accessibility trees now place these entries consecutively. The tool could not capture an expanded Finder menu screenshot, so final visual spacing still needs human confirmation.
+- 56 shared tests pass, including tampered/expired requests, remote file URLs, disabled entries and size limits. AppKit sharing lifecycle checks pass. Release build and strict nested-signature verification pass.
+- Still pending: real disconnect/timeout and no-retry checks, other target applications, external/network volumes and long-lived file access, minimum OS, public signing and upgrade/uninstall acceptance. This is not full V1 acceptance.
