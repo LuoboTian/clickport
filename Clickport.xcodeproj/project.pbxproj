@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1479C3A71224AD8B7F0B501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1479C3A71224AD8B7F0B502 /* Assets.xcassets */; };
+		1C136C604BE5654CC749B3AD /* SettingsRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB588E63E5CC3E04B3DE381 /* SettingsRoot.swift */; };
+		2036C5D3D07E387477DC6BB5 /* DirectoryAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21585C09BDCB520E0868BE75 /* DirectoryAccess.swift */; };
+		23D649B4F459FD4FFE7EE9D2 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5C4CBDE070A208EACD203 /* AppModel.swift */; };
+		317ABEA05423CF908029C28B /* SourceAvailabilityLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED45A6C7E31EF2353799C89E /* SourceAvailabilityLabel.swift */; };
+		4777F2E3AD9F5DEC783F6F74 /* FinderExtension.appex in Embed Finder Extension */ = {isa = PBXBuildFile; fileRef = 0F80F037ACE1B1826D1B1086 /* FinderExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5317BCC018E844D2B71E4648 /* SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C532D323A75DF0018D438 /* SharedContainer.swift */; };
+		57DA5E8A285CF4FB68AB82FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A295F60AF69A266BAA13A791 /* Cocoa.framework */; };
+		7B02D5DF68DE9D10865BF20D /* SystemActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6AE9B36F96C282FFA279D /* SystemActions.swift */; };
+		7DDBD22E3DD783E8E0B68ACE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A295F60AF69A266BAA13A791 /* Cocoa.framework */; };
+		816AD357C6D904A73C3C81E1 /* ClickportCore in Frameworks */ = {isa = PBXBuildFile; productRef = BE8426007709F76A026B3EF7 /* ClickportCore */; };
+		998297A77136B07F756F411A /* FinderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1605C80BC2FBB4EB669AB46C /* FinderExtension.swift */; };
+		9E801FA6A632DE7883FA000A /* ClickportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEC8B8F25E637117E6C11C /* ClickportApp.swift */; };
+		A5A397BA95F23AA6D6695EA9 /* ClickportCore in Frameworks */ = {isa = PBXBuildFile; productRef = 08999351C046E816AD9CB02B /* ClickportCore */; };
+		AA069DB6B9A26EC1A46480CB /* OperationFailureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC546175A74056D7C75A833 /* OperationFailureList.swift */; };
+		BBA1DAAD1DE2CFC39D52FDC5 /* SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3168CDD613061812862497 /* SharedContainer.swift */; };
+		D08FC7E8905EAD27C23F41D2 /* ApplicationEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD2858BA28718BC5DAE80BF /* ApplicationEditor.swift */; };
+		D8543FA0283F4E5DA0D972DC /* AppLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650002F505ABBCB6ACCDB95B /* AppLifecycle.swift */; };
+		DA4EA73CB229F11B2DFF79B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3F24D53FEF8ECD3D4544F30 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D672488E22040D7390CC57F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B43D9780D0BFF70EE3706F14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 725DB9923FEB4BBD9B331403;
+			remoteInfo = FinderExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		950E8B01E87166B7E655F5CB /* Embed Finder Extension */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4777F2E3AD9F5DEC783F6F74 /* FinderExtension.appex in Embed Finder Extension */,
+			);
+			name = "Embed Finder Extension";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D1479C3A71224AD8B7F0B502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Apps/Clickport/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		0BD5C4CBDE070A208EACD203 /* AppModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppModel.swift; path = Apps/Clickport/Services/AppModel.swift; sourceTree = "<group>"; };
+		0E626911740BDF1B29EEDE89 /* en */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = en; path = Apps/Clickport/Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0F80F037ACE1B1826D1B1086 /* FinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FB655547FEEBD8055CCB4EF /* ja */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = ja; path = Apps/Clickport/Resources/ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		13843018BE9E3124DCFB310B /* es */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = es; path = Apps/Clickport/Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1605C80BC2FBB4EB669AB46C /* FinderExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FinderExtension.swift; path = Extensions/FinderExtension/FinderExtension.swift; sourceTree = "<group>"; };
+		1AD2858BA28718BC5DAE80BF /* ApplicationEditor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApplicationEditor.swift; path = Apps/Clickport/Settings/ApplicationEditor.swift; sourceTree = "<group>"; };
+		21585C09BDCB520E0868BE75 /* DirectoryAccess.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DirectoryAccess.swift; path = Apps/Clickport/Services/DirectoryAccess.swift; sourceTree = "<group>"; };
+		252333DEDD154321DB67ACC6 /* fr */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = fr; path = Apps/Clickport/Resources/fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4FC546175A74056D7C75A833 /* OperationFailureList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationFailureList.swift; path = Apps/Clickport/Components/OperationFailureList.swift; sourceTree = "<group>"; };
+		5BB588E63E5CC3E04B3DE381 /* SettingsRoot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SettingsRoot.swift; path = Apps/Clickport/Settings/SettingsRoot.swift; sourceTree = "<group>"; };
+		650002F505ABBCB6ACCDB95B /* AppLifecycle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppLifecycle.swift; path = Apps/Clickport/App/AppLifecycle.swift; sourceTree = "<group>"; };
+		7BC6AE9B36F96C282FFA279D /* SystemActions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SystemActions.swift; path = Apps/Clickport/Actions/SystemActions.swift; sourceTree = "<group>"; };
+		7FBEC8B8F25E637117E6C11C /* ClickportApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClickportApp.swift; path = Apps/Clickport/App/ClickportApp.swift; sourceTree = "<group>"; };
+		A101DD09724A0DB895CFAF14 /* zh-Hans */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "Apps/Clickport/Resources/zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A295F60AF69A266BAA13A791 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		AE5C532D323A75DF0018D438 /* SharedContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharedContainer.swift; path = Apps/Clickport/Services/SharedContainer.swift; sourceTree = "<group>"; };
+		CFA2E90D2204C266C988CF79 /* Clickport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clickport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3168CDD613061812862497 /* SharedContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharedContainer.swift; path = Apps/Clickport/Services/SharedContainer.swift; sourceTree = "<group>"; };
+		ED45A6C7E31EF2353799C89E /* SourceAvailabilityLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceAvailabilityLabel.swift; path = Apps/Clickport/Components/SourceAvailabilityLabel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44103B0CF55B4F800835DF89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DDBD22E3DD783E8E0B68ACE /* Cocoa.framework in Frameworks */,
+				816AD357C6D904A73C3C81E1 /* ClickportCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E4BF38E0D8180DD2853056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DA5E8A285CF4FB68AB82FF /* Cocoa.framework in Frameworks */,
+				A5A397BA95F23AA6D6695EA9 /* ClickportCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0068B3B4AD4AD275A7C27335 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFA2E90D2204C266C988CF79 /* Clickport.app */,
+				0F80F037ACE1B1826D1B1086 /* FinderExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EED1B0E16FECCC0DDFF9FF6 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				A295F60AF69A266BAA13A791 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		88BD7C1D59F21B686C842633 = {
+			isa = PBXGroup;
+			children = (
+				0068B3B4AD4AD275A7C27335 /* Products */,
+				C42BA3E745D6B051545DA583 /* Frameworks */,
+				7FBEC8B8F25E637117E6C11C /* ClickportApp.swift */,
+				0BD5C4CBDE070A208EACD203 /* AppModel.swift */,
+				AE5C532D323A75DF0018D438 /* SharedContainer.swift */,
+				5BB588E63E5CC3E04B3DE381 /* SettingsRoot.swift */,
+				1605C80BC2FBB4EB669AB46C /* FinderExtension.swift */,
+				EA3168CDD613061812862497 /* SharedContainer.swift */,
+				1AD2858BA28718BC5DAE80BF /* ApplicationEditor.swift */,
+				4FC546175A74056D7C75A833 /* OperationFailureList.swift */,
+				21585C09BDCB520E0868BE75 /* DirectoryAccess.swift */,
+				650002F505ABBCB6ACCDB95B /* AppLifecycle.swift */,
+				D3F24D53FEF8ECD3D4544F30 /* Localizable.strings */,
+				D1479C3A71224AD8B7F0B502 /* Assets.xcassets */,
+				ED45A6C7E31EF2353799C89E /* SourceAvailabilityLabel.swift */,
+				7BC6AE9B36F96C282FFA279D /* SystemActions.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		C42BA3E745D6B051545DA583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EED1B0E16FECCC0DDFF9FF6 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22ED618F4939B59F3707C28D /* Clickport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECA47368CB5A01E7B316B06 /* Build configuration list for PBXNativeTarget "Clickport" */;
+			buildPhases = (
+				728D4CF26797442780E2BEBC /* Sources */,
+				80E4BF38E0D8180DD2853056 /* Frameworks */,
+				8B84AB42C3C649EBFFE04303 /* Resources */,
+				950E8B01E87166B7E655F5CB /* Embed Finder Extension */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DBBC74D43BD32C8330CC7DE /* PBXTargetDependency */,
+			);
+			name = Clickport;
+			packageProductDependencies = (
+				08999351C046E816AD9CB02B /* ClickportCore */,
+			);
+			productName = Clickport;
+			productReference = CFA2E90D2204C266C988CF79 /* Clickport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		725DB9923FEB4BBD9B331403 /* FinderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A981305D12CD9855CF270375 /* Build configuration list for PBXNativeTarget "FinderExtension" */;
+			buildPhases = (
+				CF48A4E7819FF2297A96C9D9 /* Sources */,
+				44103B0CF55B4F800835DF89 /* Frameworks */,
+				78D5BEACCB9241EBFA53B497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinderExtension;
+			packageProductDependencies = (
+				BE8426007709F76A026B3EF7 /* ClickportCore */,
+			);
+			productName = FinderExtension;
+			productReference = 0F80F037ACE1B1826D1B1086 /* FinderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B43D9780D0BFF70EE3706F14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 9FE8C76EA42E61A6C120AB5B /* Build configuration list for PBXProject "Clickport" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				ja,
+				es,
+				fr,
+			);
+			mainGroup = 88BD7C1D59F21B686C842633;
+			minimizedProjectReferenceProxies = 0;
+			packageReferences = (
+				9965579339BBD7D8ED0C79A8 /* XCLocalSwiftPackageReference "ClickportCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0068B3B4AD4AD275A7C27335 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22ED618F4939B59F3707C28D /* Clickport */,
+				725DB9923FEB4BBD9B331403 /* FinderExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78D5BEACCB9241EBFA53B497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B84AB42C3C649EBFFE04303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4EA73CB229F11B2DFF79B3 /* Localizable.strings in Resources */,
+				D1479C3A71224AD8B7F0B501 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		728D4CF26797442780E2BEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E801FA6A632DE7883FA000A /* ClickportApp.swift in Sources */,
+				23D649B4F459FD4FFE7EE9D2 /* AppModel.swift in Sources */,
+				5317BCC018E844D2B71E4648 /* SharedContainer.swift in Sources */,
+				1C136C604BE5654CC749B3AD /* SettingsRoot.swift in Sources */,
+				D08FC7E8905EAD27C23F41D2 /* ApplicationEditor.swift in Sources */,
+				AA069DB6B9A26EC1A46480CB /* OperationFailureList.swift in Sources */,
+				2036C5D3D07E387477DC6BB5 /* DirectoryAccess.swift in Sources */,
+				D8543FA0283F4E5DA0D972DC /* AppLifecycle.swift in Sources */,
+				317ABEA05423CF908029C28B /* SourceAvailabilityLabel.swift in Sources */,
+				7B02D5DF68DE9D10865BF20D /* SystemActions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF48A4E7819FF2297A96C9D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				998297A77136B07F756F411A /* FinderExtension.swift in Sources */,
+				BBA1DAAD1DE2CFC39D52FDC5 /* SharedContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DBBC74D43BD32C8330CC7DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FinderExtension;
+			target = 725DB9923FEB4BBD9B331403 /* FinderExtension */;
+			targetProxy = D672488E22040D7390CC57F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3F24D53FEF8ECD3D4544F30 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E626911740BDF1B29EEDE89 /* en */,
+				A101DD09724A0DB895CFAF14 /* zh-Hans */,
+				0FB655547FEEBD8055CCB4EF /* ja */,
+				13843018BE9E3124DCFB310B /* es */,
+				252333DEDD154321DB67ACC6 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A42252903C854D3241F32E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/App.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/App-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.clickport.app;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		47962690F97D303825200386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4D8ACA6616B23896FBE1D101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Config/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/Extension-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.clickport.app.finder;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A44F17A98F6D9F1A6D6C9E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/App.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/App-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.clickport.app;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		E11FBCA7E23D67AB36259E91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FBFAE85F5BDEA1FBA77CC3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Config/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Config/Extension-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.clickport.app.finder;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ECA47368CB5A01E7B316B06 /* Build configuration list for PBXNativeTarget "Clickport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44F17A98F6D9F1A6D6C9E5B /* Release */,
+				0A42252903C854D3241F32E0 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FE8C76EA42E61A6C120AB5B /* Build configuration list for PBXProject "Clickport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47962690F97D303825200386 /* Debug */,
+				E11FBCA7E23D67AB36259E91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A981305D12CD9855CF270375 /* Build configuration list for PBXNativeTarget "FinderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFAE85F5BDEA1FBA77CC3D1 /* Release */,
+				4D8ACA6616B23896FBE1D101 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9965579339BBD7D8ED0C79A8 /* XCLocalSwiftPackageReference "ClickportCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ClickportCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08999351C046E816AD9CB02B /* ClickportCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9965579339BBD7D8ED0C79A8 /* XCLocalSwiftPackageReference "ClickportCore" */;
+			productName = ClickportCore;
+		};
+		BE8426007709F76A026B3EF7 /* ClickportCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9965579339BBD7D8ED0C79A8 /* XCLocalSwiftPackageReference "ClickportCore" */;
+			productName = ClickportCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B43D9780D0BFF70EE3706F14 /* Project object */;
+}

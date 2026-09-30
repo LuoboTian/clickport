@@ -5,5 +5,21 @@ DerivedData/
 *.xcuserstate
 .env
 .env.*
+__pycache__/
+*.py[cod]
 *.p12
+*.pem
+*.cer
+*.der
 *.mobileprovision
+
+# Local signing and packaging artifacts
+*.p8
+*.pfx
+*.keychain
+*.keychain-db
+*.provisionprofile
+*.dmg
+*.app/
+*.appex/
+xcuserdata/

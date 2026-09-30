@@ -1,0 +1,1286 @@
+{
+  "通用": [
+    "General",
+    "一般",
+    "General",
+    "Général"
+  ],
+  "打开方式": [
+    "Open With",
+    "このアプリケーションで開く",
+    "Abrir con",
+    "Ouvrir avec"
+  ],
+  "文件操作": [
+    "File Actions",
+    "ファイル操作",
+    "Acciones de archivo",
+    "Actions sur les fichiers"
+  ],
+  "新建文件": [
+    "New File",
+    "新規ファイル",
+    "Nuevo archivo",
+    "Nouveau fichier"
+  ],
+  "目录快捷入口": [
+    "Folder Shortcuts",
+    "フォルダショートカット",
+    "Accesos a carpetas",
+    "Raccourcis de dossiers"
+  ],
+  "右键菜单": [
+    "Context Menu",
+    "コンテキストメニュー",
+    "Menú contextual",
+    "Menu contextuel"
+  ],
+  "关于": [
+    "About",
+    "このアプリについて",
+    "Acerca de",
+    "À propos"
+  ],
+  "设置": [
+    "Settings",
+    "設定",
+    "Ajustes",
+    "Réglages"
+  ],
+  "设置…": [
+    "Settings…",
+    "設定…",
+    "Ajustes…",
+    "Réglages…"
+  ],
+  "Clickport 设置": [
+    "Clickport Settings",
+    "Clickport 設定",
+    "Ajustes de Clickport",
+    "Réglages de Clickport"
+  ],
+  "退出 Clickport": [
+    "Quit Clickport",
+    "Clickport を終了",
+    "Salir de Clickport",
+    "Quitter Clickport"
+  ],
+  "启动与入口": [
+    "Startup and Access",
+    "起動とアクセス",
+    "Inicio y acceso",
+    "Démarrage et accès"
+  ],
+  "登录时启动": [
+    "Launch at Login",
+    "ログイン時に起動",
+    "Abrir al iniciar sesión",
+    "Ouvrir à la connexion"
+  ],
+  "显示菜单栏图标": [
+    "Show Menu Bar Icon",
+    "メニューバーアイコンを表示",
+    "Mostrar icono en la barra de menús",
+    "Afficher l’icône dans la barre des menus"
+  ],
+  "扩展状态": [
+    "Extension Status",
+    "機能拡張の状態",
+    "Estado de la extensión",
+    "État de l’extension"
+  ],
+  "Finder 扩展": [
+    "Finder Extension",
+    "Finder 機能拡張",
+    "Extensión de Finder",
+    "Extension Finder"
+  ],
+  "已启用": [
+    "Enabled",
+    "有効",
+    "Activada",
+    "Activée"
+  ],
+  "未启用": [
+    "Not Enabled",
+    "無効",
+    "Desactivada",
+    "Désactivée"
+  ],
+  "Finder 扩展：已启用": [
+    "Finder Extension: Enabled",
+    "Finder 機能拡張：有効",
+    "Extensión de Finder: activada",
+    "Extension Finder : activée"
+  ],
+  "Finder 扩展：未启用": [
+    "Finder Extension: Not Enabled",
+    "Finder 機能拡張：無効",
+    "Extensión de Finder: desactivada",
+    "Extension Finder : désactivée"
+  ],
+  "管理 Finder 扩展…": [
+    "Manage Finder Extension…",
+    "Finder 機能拡張を管理…",
+    "Gestionar extensión de Finder…",
+    "Gérer l’extension Finder…"
+  ],
+  "打开系统登录项设置…": [
+    "Open Login Items Settings…",
+    "ログイン項目の設定を開く…",
+    "Abrir ajustes de inicio de sesión…",
+    "Ouvrir les réglages des éléments d’ouverture…"
+  ],
+  "目录访问授权": [
+    "Folder Access",
+    "フォルダへのアクセス",
+    "Acceso a carpetas",
+    "Accès aux dossiers"
+  ],
+  "添加授权目录…": [
+    "Allow a Folder…",
+    "フォルダを許可…",
+    "Autorizar una carpeta…",
+    "Autoriser un dossier…"
+  ],
+  "撤销": [
+    "Revoke",
+    "取り消す",
+    "Revocar",
+    "Révoquer"
+  ],
+  "允许访问": [
+    "Allow Access",
+    "アクセスを許可",
+    "Permitir acceso",
+    "Autoriser l’accès"
+  ],
+  "配置": [
+    "Configuration",
+    "構成",
+    "Configuración",
+    "Configuration"
+  ],
+  "导入配置…": [
+    "Import Configuration…",
+    "構成を読み込む…",
+    "Importar configuración…",
+    "Importer la configuration…"
+  ],
+  "导出配置…": [
+    "Export Configuration…",
+    "構成を書き出す…",
+    "Exportar configuración…",
+    "Exporter la configuration…"
+  ],
+  "导出诊断日志…": [
+    "Export Diagnostics…",
+    "診断ログを書き出す…",
+    "Exportar diagnóstico…",
+    "Exporter le diagnostic…"
+  ],
+  "恢复默认设置…": [
+    "Restore Default Settings…",
+    "設定を初期値に戻す…",
+    "Restaurar ajustes predeterminados…",
+    "Rétablir les réglages par défaut…"
+  ],
+  "恢复默认设置？": [
+    "Restore Default Settings?",
+    "設定を初期値に戻しますか？",
+    "¿Restaurar los ajustes predeterminados?",
+    "Rétablir les réglages par défaut ?"
+  ],
+  "恢复默认设置": [
+    "Restore Default Settings",
+    "設定を初期値に戻す",
+    "Restaurar ajustes predeterminados",
+    "Rétablir les réglages par défaut"
+  ],
+  "恢复默认菜单…": [
+    "Restore Default Menu…",
+    "メニューを初期値に戻す…",
+    "Restaurar menú predeterminado…",
+    "Rétablir le menu par défaut…"
+  ],
+  "恢复默认菜单？": [
+    "Restore Default Menu?",
+    "メニューを初期値に戻しますか？",
+    "¿Restaurar el menú predeterminado?",
+    "Rétablir le menu par défaut ?"
+  ],
+  "恢复默认菜单": [
+    "Restore Default Menu",
+    "メニューを初期値に戻す",
+    "Restaurar menú predeterminado",
+    "Rétablir le menu par défaut"
+  ],
+  "添加应用…": [
+    "Add Application…",
+    "アプリケーションを追加…",
+    "Añadir aplicación…",
+    "Ajouter une application…"
+  ],
+  "添加目录…": [
+    "Add Folder…",
+    "フォルダを追加…",
+    "Añadir carpeta…",
+    "Ajouter un dossier…"
+  ],
+  "导入模板…": [
+    "Import Template…",
+    "テンプレートを読み込む…",
+    "Importar plantilla…",
+    "Importer un modèle…"
+  ],
+  "重新导入…": [
+    "Reimport…",
+    "再読み込み…",
+    "Volver a importar…",
+    "Réimporter…"
+  ],
+  "新建文件模板": [
+    "New File Templates",
+    "新規ファイルのテンプレート",
+    "Plantillas de archivos nuevos",
+    "Modèles de nouveaux fichiers"
+  ],
+  "编辑…": [
+    "Edit…",
+    "編集…",
+    "Editar…",
+    "Modifier…"
+  ],
+  "改名…": [
+    "Rename…",
+    "名前を変更…",
+    "Renombrar…",
+    "Renommer…"
+  ],
+  "移除": [
+    "Remove",
+    "削除",
+    "Eliminar",
+    "Supprimer"
+  ],
+  "上移": [
+    "Move Up",
+    "上へ",
+    "Subir",
+    "Monter"
+  ],
+  "下移": [
+    "Move Down",
+    "下へ",
+    "Bajar",
+    "Descendre"
+  ],
+  "取消": [
+    "Cancel",
+    "キャンセル",
+    "Cancelar",
+    "Annuler"
+  ],
+  "保存": [
+    "Save",
+    "保存",
+    "Guardar",
+    "Enregistrer"
+  ],
+  "完成": [
+    "Done",
+    "完了",
+    "Listo",
+    "Terminé"
+  ],
+  "好": [
+    "OK",
+    "OK",
+    "Aceptar",
+    "OK"
+  ],
+  "保存更改": [
+    "Save Changes",
+    "変更を保存",
+    "Guardar cambios",
+    "Enregistrer les modifications"
+  ],
+  "放弃更改": [
+    "Discard Changes",
+    "変更を破棄",
+    "Descartar cambios",
+    "Abandonner les modifications"
+  ],
+  "菜单分组顺序": [
+    "Menu Group Order",
+    "メニューグループの順序",
+    "Orden de grupos del menú",
+    "Ordre des groupes du menu"
+  ],
+  "快捷操作顺序": [
+    "Shortcut Order",
+    "ショートカットの順序",
+    "Orden de accesos directos",
+    "Ordre des raccourcis"
+  ],
+  "第一层快捷操作 · 最多 5 项": [
+    "Top-Level Shortcuts · Up to 5",
+    "最上位のショートカット・最大5件",
+    "Accesos directos · Hasta 5",
+    "Raccourcis directs · 5 maximum"
+  ],
+  "来源功能已关闭": [
+    "Source Disabled",
+    "元の機能が無効",
+    "Función de origen desactivada",
+    "Fonction source désactivée"
+  ],
+  "操作不可用": [
+    "Action Unavailable",
+    "操作できません",
+    "Acción no disponible",
+    "Action indisponible"
+  ],
+  "操作未完成": [
+    "Action Not Completed",
+    "操作が完了しませんでした",
+    "Acción no completada",
+    "Action non terminée"
+  ],
+  "停止后续操作": [
+    "Stop Remaining Actions",
+    "残りの操作を停止",
+    "Detener acciones restantes",
+    "Arrêter les actions restantes"
+  ],
+  "复制路径": [
+    "Copy Path",
+    "パスをコピー",
+    "Copiar ruta",
+    "Copier le chemin"
+  ],
+  "复制所选项路径": [
+    "Copy Selected Paths",
+    "選択項目のパスをコピー",
+    "Copiar rutas seleccionadas",
+    "Copier les chemins sélectionnés"
+  ],
+  "复制文件夹路径": [
+    "Copy Folder Path",
+    "フォルダのパスをコピー",
+    "Copiar ruta de la carpeta",
+    "Copier le chemin du dossier"
+  ],
+  "复制文件路径": [
+    "Copy File Path",
+    "ファイルのパスをコピー",
+    "Copiar ruta del archivo",
+    "Copier le chemin du fichier"
+  ],
+  "复制桌面路径": [
+    "Copy Desktop Path",
+    "デスクトップのパスをコピー",
+    "Copiar ruta del escritorio",
+    "Copier le chemin du Bureau"
+  ],
+  "复制当前文件夹路径": [
+    "Copy Current Folder Path",
+    "現在のフォルダのパスをコピー",
+    "Copiar ruta de la carpeta actual",
+    "Copier le chemin du dossier actuel"
+  ],
+  "隐藏选中项": [
+    "Hide Selected Items",
+    "選択項目を隠す",
+    "Ocultar elementos seleccionados",
+    "Masquer les éléments sélectionnés"
+  ],
+  "取消隐藏选中项": [
+    "Unhide Selected Items",
+    "選択項目を再表示",
+    "Mostrar elementos seleccionados",
+    "Afficher les éléments sélectionnés"
+  ],
+  "取消隐藏当前目录直接子项…": [
+    "Unhide Items in Current Folder…",
+    "現在のフォルダの項目を再表示…",
+    "Mostrar elementos de la carpeta actual…",
+    "Afficher les éléments du dossier actuel…"
+  ],
+  "显示目录中的隐藏项目": [
+    "Unhide Items in Folder",
+    "フォルダの項目を再表示",
+    "Mostrar elementos ocultos de la carpeta",
+    "Afficher les éléments masqués du dossier"
+  ],
+  "隔空投送": [
+    "AirDrop",
+    "AirDrop",
+    "AirDrop",
+    "AirDrop"
+  ],
+  "直接删除…": [
+    "Delete Permanently…",
+    "完全に削除…",
+    "Eliminar permanentemente…",
+    "Supprimer définitivement…"
+  ],
+  "永久删除": [
+    "Delete Permanently",
+    "完全に削除",
+    "Eliminar permanentemente",
+    "Supprimer définitivement"
+  ],
+  "新建 %@": [
+    "New %@",
+    "%@を作成",
+    "Nuevo %@",
+    "Nouveau %@"
+  ],
+  "纯文本": [
+    "Plain Text",
+    "標準テキスト",
+    "Texto sin formato",
+    "Texte brut"
+  ],
+  "编辑打开方式": [
+    "Edit Application",
+    "アプリケーションを編集",
+    "Editar aplicación",
+    "Modifier l’application"
+  ],
+  "编辑目录快捷入口": [
+    "Edit Folder Shortcut",
+    "フォルダショートカットを編集",
+    "Editar acceso a carpeta",
+    "Modifier le raccourci de dossier"
+  ],
+  "编辑模板名称": [
+    "Edit Template Name",
+    "テンプレート名を編集",
+    "Editar nombre de plantilla",
+    "Modifier le nom du modèle"
+  ],
+  "菜单名称": [
+    "Menu Name",
+    "メニュー名",
+    "Nombre en el menú",
+    "Nom dans le menu"
+  ],
+  "启用": [
+    "Enabled",
+    "有効",
+    "Activado",
+    "Activé"
+  ],
+  "请求启动新实例": [
+    "Request a New Instance",
+    "新しいインスタンスで起動",
+    "Solicitar nueva instancia",
+    "Demander une nouvelle instance"
+  ],
+  "重新选择应用…": [
+    "Choose Application Again…",
+    "アプリケーションを選び直す…",
+    "Volver a elegir aplicación…",
+    "Choisir à nouveau l’application…"
+  ],
+  "重新选择目录…": [
+    "Choose Folder Again…",
+    "フォルダを選び直す…",
+    "Volver a elegir carpeta…",
+    "Choisir à nouveau le dossier…"
+  ],
+  "启动参数": [
+    "Launch Arguments",
+    "起動引数",
+    "Argumentos de inicio",
+    "Arguments de lancement"
+  ],
+  "参数": [
+    "Argument",
+    "引数",
+    "Argumento",
+    "Argument"
+  ],
+  "移除参数": [
+    "Remove Argument",
+    "引数を削除",
+    "Eliminar argumento",
+    "Supprimer l’argument"
+  ],
+  "添加参数": [
+    "Add Argument",
+    "引数を追加",
+    "Añadir argumento",
+    "Ajouter un argument"
+  ],
+  "环境变量": [
+    "Environment Variables",
+    "環境変数",
+    "Variables de entorno",
+    "Variables d’environnement"
+  ],
+  "变量名": [
+    "Variable Name",
+    "変数名",
+    "Nombre de variable",
+    "Nom de la variable"
+  ],
+  "变量值": [
+    "Value",
+    "値",
+    "Valor",
+    "Valeur"
+  ],
+  "移除变量": [
+    "Remove Variable",
+    "変数を削除",
+    "Eliminar variable",
+    "Supprimer la variable"
+  ],
+  "添加环境变量": [
+    "Add Environment Variable",
+    "環境変数を追加",
+    "Añadir variable de entorno",
+    "Ajouter une variable d’environnement"
+  ],
+  "打开 Clickport 以使用右键操作…": [
+    "Open Clickport to Use File Actions…",
+    "Clickport を開いてファイル操作を使用…",
+    "Abrir Clickport para usar acciones…",
+    "Ouvrir Clickport pour utiliser les actions…"
+  ],
+  "配置不可用，请打开 Clickport 检查…": [
+    "Configuration Unavailable — Open Clickport…",
+    "構成を利用できません。Clickport を開く…",
+    "Configuración no disponible. Abrir Clickport…",
+    "Configuration indisponible. Ouvrir Clickport…"
+  ],
+  "GitHub · 地址待配置": [
+    "GitHub · Not Configured",
+    "GitHub・未設定",
+    "GitHub · Sin configurar",
+    "GitHub · Non configuré"
+  ],
+  "Finder 右键文件操作工具": [
+    "File actions in the Finder context menu",
+    "Finder のコンテキストメニューからファイル操作",
+    "Acciones de archivo en el menú de Finder",
+    "Actions sur les fichiers dans le menu Finder"
+  ],
+  "等待系统批准，请前往登录项设置": [
+    "Awaiting approval in Login Items settings",
+    "ログイン項目の設定で承認してください",
+    "Pendiente de aprobación en los ajustes de inicio",
+    "En attente d’approbation dans les éléments d’ouverture"
+  ],
+  "状态暂不可用": [
+    "Status Unavailable",
+    "状態を取得できません",
+    "Estado no disponible",
+    "État indisponible"
+  ],
+  " · 已停止后续操作": [
+    " · Remaining actions stopped",
+    "・残りの操作を停止しました",
+    " · Acciones restantes detenidas",
+    " · Actions restantes arrêtées"
+  ],
+  "0.1.0 · 开发版本": [
+    "0.1.0 · Development build",
+    "0.1.0・開発版",
+    "0.1.0 · Versión de desarrollo",
+    "0.1.0 · Version de développement"
+  ],
+  "Office 模板缺少必要的文档内容": [
+    "The Office template is missing required document parts.",
+    "Office テンプレートに必要な内容がありません。",
+    "Faltan partes necesarias en la plantilla de Office.",
+    "Des éléments requis manquent dans le modèle Office."
+  ],
+  "不支持此目标。": [
+    "This target is not supported.",
+    "この対象には対応していません。",
+    "Este destino no es compatible.",
+    "Cette cible n’est pas prise en charge."
+  ],
+  "不支持的模板类型": [
+    "Unsupported template type",
+    "未対応のテンプレート形式です",
+    "Tipo de plantilla no compatible",
+    "Type de modèle non pris en charge"
+  ],
+  "仅包含本次运行的时间和事件类别，不含文件路径、文件名、参数或环境变量。": [
+    "Includes times and event types from this session only. No paths, filenames, arguments or environment values.",
+    "今回の実行の時刻とイベント種別のみを含みます。パス、ファイル名、引数、環境変数の値は含みません。",
+    "Solo incluye horas y tipos de evento de esta sesión. No contiene rutas, nombres, argumentos ni variables de entorno.",
+    "Contient uniquement les heures et types d’événements de cette session, sans chemins, noms de fichiers, arguments ni valeurs d’environnement."
+  ],
+  "值仅保存在本机配置，导出时排除。已运行应用可能不会应用新的启动环境。": [
+    "Values stay in local settings and are excluded from exports. Running apps may ignore a new launch environment.",
+    "値はこの Mac の設定にのみ保存され、書き出しには含まれません。起動済みのアプリには新しい環境が適用されない場合があります。",
+    "Los valores se guardan localmente y no se exportan. Las apps abiertas pueden ignorar el nuevo entorno.",
+    "Les valeurs restent dans les réglages locaux et sont exclues des exports. Les apps déjà ouvertes peuvent ignorer le nouvel environnement."
+  ],
+  "共享容器不可用": [
+    "Shared storage is unavailable.",
+    "共有ストレージを利用できません。",
+    "El almacenamiento compartido no está disponible.",
+    "Le stockage partagé est indisponible."
+  ],
+  "剪贴板写入失败": [
+    "Could not write to the clipboard.",
+    "クリップボードに書き込めませんでした。",
+    "No se pudo escribir en el portapapeles.",
+    "Impossible d’écrire dans le presse-papiers."
+  ],
+  "右键菜单中的文件操作": [
+    "File Actions in the Context Menu",
+    "コンテキストメニューのファイル操作",
+    "Acciones de archivo del menú contextual",
+    "Actions du menu contextuel"
+  ],
+  "同名文件过多，请更改目标目录": [
+    "Too many files with this name. Choose another folder.",
+    "同名のファイルが多すぎます。別のフォルダを選択してください。",
+    "Hay demasiados archivos con este nombre. Elige otra carpeta.",
+    "Trop de fichiers portent ce nom. Choisissez un autre dossier."
+  ],
+  "导入后保留独立副本，不受原文件移动影响。Office / iWork 请先确认可在原应用打开；这里只检查基础结构。支持 TXT、MD、JSON、DOCX、XLSX、PPTX、Pages、Numbers、Keynote，单个模板最多 256 MB。": [
+    "Import stores an independent copy. Moving the original will not affect it. Verify Office / iWork documents in their original app; only basic structure is checked here. Supports TXT, MD, JSON, DOCX, XLSX, PPTX, Pages, Numbers and Keynote. Maximum 256 MB per template.",
+    "読み込み時に独立したコピーを保存するため、原本を移動しても影響しません。Office / iWork 書類は元のアプリで開けることを確認してください。ここでは基本構造のみを確認します。TXT、MD、JSON、DOCX、XLSX、PPTX、Pages、Numbers、Keynote に対応。テンプレートは最大 256 MB です。",
+    "Se guarda una copia independiente; mover el original no la afecta. Comprueba los documentos de Office / iWork en su app original: aquí solo se revisa la estructura básica. Admite TXT, MD, JSON, DOCX, XLSX, PPTX, Pages, Numbers y Keynote. Máximo 256 MB por plantilla.",
+    "L’import conserve une copie indépendante, même si l’original est déplacé. Vérifiez les documents Office / iWork dans leur app d’origine ; seule la structure de base est contrôlée ici. Formats : TXT, MD, JSON, DOCX, XLSX, PPTX, Pages, Numbers et Keynote. Maximum 256 Mo par modèle."
+  ],
+  "导出不包含环境变量值或目录访问授权。": [
+    "Exports exclude environment values and folder access grants.",
+    "書き出しには環境変数の値やフォルダへのアクセス許可は含まれません。",
+    "La exportación excluye valores de entorno y permisos de acceso a carpetas.",
+    "Les exports excluent les valeurs d’environnement et les autorisations d’accès aux dossiers."
+  ],
+  "将在当前项目处理结束后停止…": [
+    "Stopping after the current item…",
+    "現在の項目の処理が終わったら停止します…",
+    "Se detendrá al finalizar el elemento actual…",
+    "Arrêt après l’élément en cours…"
+  ],
+  "将恢复菜单分组顺序和复制路径快捷入口，替换当前未保存的菜单更改。应用、模板和目录列表会保留。": [
+    "Resets group order and the Copy Path shortcut, replacing unsaved menu changes. Application, template and folder lists are kept.",
+    "グループ順序とパスをコピーするショートカットを初期値に戻し、未保存のメニュー変更を置き換えます。アプリ、テンプレート、フォルダの一覧は保持します。",
+    "Restablece el orden de grupos y el acceso Copiar ruta, sustituyendo los cambios sin guardar. Se conservan las listas de apps, plantillas y carpetas.",
+    "Rétablit l’ordre des groupes et le raccourci Copier le chemin, en remplaçant les modifications non enregistrées. Les listes d’apps, de modèles et de dossiers sont conservées."
+  ],
+  "将恢复通用选项和操作开关，关闭登录启动，清除自定义应用、目录和模板引用。个人文件和已保存的目录授权将保留。": [
+    "Resets general settings and actions, disables launch at login and clears custom app, folder and template references. Personal files and saved folder grants are kept.",
+    "一般設定と操作の設定を初期化し、ログイン時の起動を無効にして、カスタムアプリ、フォルダ、テンプレートの参照を削除します。個人ファイルと保存済みのフォルダ許可は保持します。",
+    "Restablece los ajustes y acciones, desactiva la apertura al iniciar sesión y elimina referencias a apps, carpetas y plantillas personalizadas. Conserva archivos personales y permisos de carpetas.",
+    "Réinitialise les réglages et actions, désactive l’ouverture à la connexion et efface les références personnalisées aux apps, dossiers et modèles. Les fichiers personnels et autorisations de dossiers sont conservés."
+  ],
+  "已创建文件": [
+    "File created",
+    "ファイルを作成しました",
+    "Archivo creado",
+    "Fichier créé"
+  ],
+  "已取消导入": [
+    "Import cancelled",
+    "読み込みをキャンセルしました",
+    "Importación cancelada",
+    "Import annulé"
+  ],
+  "已取消操作": [
+    "Action cancelled",
+    "操作をキャンセルしました",
+    "Acción cancelada",
+    "Action annulée"
+  ],
+  "已有 Clickport 实例正在运行，请退出旧版本后重新打开": [
+    "Another Clickport instance is running. Quit it and reopen this version.",
+    "別の Clickport が動作中です。終了してからこのバージョンを開いてください。",
+    "Hay otra instancia de Clickport abierta. Ciérrala y vuelve a abrir esta versión.",
+    "Une autre instance de Clickport est ouverte. Quittez-la et rouvrez cette version."
+  ],
+  "已请求使用应用打开": [
+    "Requested to open with the application",
+    "アプリケーションで開くよう要求しました",
+    "Se solicitó abrir con la aplicación",
+    "Ouverture avec l’application demandée"
+  ],
+  "已请求打开目录": [
+    "Requested to open the folder",
+    "フォルダを開くよう要求しました",
+    "Se solicitó abrir la carpeta",
+    "Ouverture du dossier demandée"
+  ],
+  "已选择多个项目，请明确选择一个新建目录。": [
+    "Multiple items selected. Choose one destination folder for the new file.",
+    "複数の項目が選択されています。新規ファイルの作成先を1つ選択してください。",
+    "Hay varios elementos seleccionados. Elige una carpeta de destino para el nuevo archivo.",
+    "Plusieurs éléments sont sélectionnés. Choisissez un dossier de destination pour le nouveau fichier."
+  ],
+  "应用已移动或卸载，请在打开方式中重新选择": [
+    "The app was moved or removed. Choose it again in Open With.",
+    "アプリが移動または削除されました。「このアプリケーションで開く」で選び直してください。",
+    "La app se movió o eliminó. Vuelve a elegirla en Abrir con.",
+    "L’app a été déplacée ou supprimée. Sélectionnez-la à nouveau dans Ouvrir avec."
+  ],
+  "建议保留 1–3 项；来源关闭后自动隐藏，永久删除不能加入快捷操作。": [
+    "Keep 1–3 shortcuts for a compact menu. Disabled sources are hidden. Permanent deletion cannot be a shortcut.",
+    "1〜3件にするとコンパクトです。元の機能を無効にすると非表示になります。完全削除は追加できません。",
+    "Se recomiendan 1–3 accesos. Las funciones desactivadas se ocultan. La eliminación permanente no puede añadirse.",
+    "Gardez 1 à 3 raccourcis pour un menu compact. Les sources désactivées sont masquées. La suppression définitive ne peut pas être ajoutée."
+  ],
+  "当前为本地开发构建，尚未完成 V1 验收。": [
+    "Local development build. V1 acceptance testing is not complete.",
+    "ローカル開発版です。V1 の受け入れテストは未完了です。",
+    "Versión de desarrollo local. La validación de V1 no ha finalizado.",
+    "Version de développement locale. La validation de V1 n’est pas terminée."
+  ],
+  "当前目录不可用": [
+    "The current folder is unavailable.",
+    "現在のフォルダを利用できません。",
+    "La carpeta actual no está disponible.",
+    "Le dossier actuel est indisponible."
+  ],
+  "当前目标无法使用隔空投送": [
+    "AirDrop is unavailable for these items.",
+    "これらの項目では AirDrop を使用できません。",
+    "AirDrop no está disponible para estos elementos.",
+    "AirDrop n’est pas disponible pour ces éléments."
+  ],
+  "当前通过 Finder 定位新文件，不需要辅助功能权限。": [
+    "New files are revealed in Finder. Accessibility permission is not required.",
+    "新規ファイルは Finder で表示します。アクセシビリティ権限は不要です。",
+    "Los archivos nuevos se muestran en Finder. No se requiere permiso de accesibilidad.",
+    "Les nouveaux fichiers sont affichés dans Finder. Aucune autorisation d’accessibilité n’est requise."
+  ],
+  "所选目录不包含操作目标": [
+    "The selected folder does not contain the target.",
+    "選択したフォルダには対象が含まれていません。",
+    "La carpeta elegida no contiene el destino.",
+    "Le dossier choisi ne contient pas la cible."
+  ],
+  "授权只保存在本机，不随配置导出。撤销后再次操作该目录会重新请求；系统隐私权限由 macOS 管理。": [
+    "Grants stay on this Mac and are not exported. After revocation, access is requested again. macOS manages system privacy permissions.",
+    "許可はこの Mac にのみ保存され、書き出されません。取り消した後は再度許可を求めます。システムのプライバシー権限は macOS が管理します。",
+    "Los permisos se guardan en este Mac y no se exportan. Tras revocarlos se vuelven a solicitar. macOS gestiona los permisos de privacidad del sistema.",
+    "Les autorisations restent sur ce Mac et ne sont pas exportées. Après révocation, l’accès sera redemandé. macOS gère les permissions de confidentialité du système."
+  ],
+  "授权记录无法读取，请重新选择所需目录。": [
+    "Could not read saved grants. Choose the required folders again.",
+    "保存済みの許可を読み込めません。必要なフォルダを選び直してください。",
+    "No se pudieron leer los permisos guardados. Vuelve a elegir las carpetas.",
+    "Impossible de lire les autorisations enregistrées. Sélectionnez à nouveau les dossiers requis."
+  ],
+  "操作已关闭": [
+    "This action is disabled.",
+    "この操作は無効です。",
+    "Esta acción está desactivada.",
+    "Cette action est désactivée."
+  ],
+  "操作已关闭或目标不适用": [
+    "This action is disabled or unavailable for the target.",
+    "この操作は無効か、対象に適用できません。",
+    "La acción está desactivada o no es válida para el destino.",
+    "Cette action est désactivée ou indisponible pour la cible."
+  ],
+  "文件名含换行符，无法安全地按行复制路径。请先调整文件名。": [
+    "A filename contains a line break, so paths cannot be copied as separate lines. Rename it first.",
+    "ファイル名に改行があるため、パスを1行ずつコピーできません。先に名前を変更してください。",
+    "Un nombre contiene un salto de línea y no permite copiar rutas por líneas. Renómbralo primero.",
+    "Un nom de fichier contient un saut de ligne, empêchant la copie des chemins par ligne. Renommez-le d’abord."
+  ],
+  "文本模板需使用 UTF-8 编码": [
+    "Text templates must use UTF-8.",
+    "テキストテンプレートは UTF-8 にしてください。",
+    "Las plantillas de texto deben usar UTF-8.",
+    "Les modèles texte doivent être encodés en UTF-8."
+  ],
+  "文档包不能包含符号链接": [
+    "Document packages cannot contain symbolic links.",
+    "書類パッケージにシンボリックリンクは使用できません。",
+    "Los paquetes de documentos no pueden contener enlaces simbólicos.",
+    "Les paquets de documents ne peuvent pas contenir de liens symboliques."
+  ],
+  "文档包为空": [
+    "The document package is empty.",
+    "書類パッケージが空です。",
+    "El paquete de documento está vacío.",
+    "Le paquet du document est vide."
+  ],
+  "文档容器不完整，请从原应用重新保存后导入": [
+    "The document container is incomplete. Save it again in its original app before importing.",
+    "書類のコンテナが不完全です。元のアプリで保存し直してから読み込んでください。",
+    "El contenedor está incompleto. Guarda de nuevo el documento en su app original antes de importarlo.",
+    "Le conteneur du document est incomplet. Enregistrez-le à nouveau dans son app d’origine avant l’import."
+  ],
+  "无法打开目录": [
+    "Could not open the folder.",
+    "フォルダを開けませんでした。",
+    "No se pudo abrir la carpeta.",
+    "Impossible d’ouvrir le dossier."
+  ],
+  "无法读取文档包": [
+    "Could not read the document package.",
+    "書類パッケージを読み込めませんでした。",
+    "No se pudo leer el paquete de documento.",
+    "Impossible de lire le paquet du document."
+  ],
+  "显示目录中的隐藏项目？": [
+    "Unhide items in this folder?",
+    "このフォルダの項目を再表示しますか？",
+    "¿Mostrar elementos ocultos de esta carpeta?",
+    "Afficher les éléments masqués de ce dossier ?"
+  ],
+  "显示项目": [
+    "Unhide Items",
+    "項目を再表示",
+    "Mostrar elementos",
+    "Afficher les éléments"
+  ],
+  "本地签名或共享容器不可用，请使用本机开发证书构建": [
+    "Local signing or shared storage is unavailable. Build with a local development certificate.",
+    "ローカル署名または共有ストレージを利用できません。ローカル開発証明書でビルドしてください。",
+    "La firma local o el almacenamiento compartido no están disponibles. Compila con un certificado de desarrollo local.",
+    "La signature locale ou le stockage partagé est indisponible. Compilez avec un certificat de développement local."
+  ],
+  "模板不能是符号链接": [
+    "Templates cannot be symbolic links.",
+    "シンボリックリンクをテンプレートにはできません。",
+    "Las plantillas no pueden ser enlaces simbólicos.",
+    "Les modèles ne peuvent pas être des liens symboliques."
+  ],
+  "模板超过 256 MB 或项目过多": [
+    "The template exceeds 256 MB or contains too many items.",
+    "テンプレートが 256 MB を超えるか、項目が多すぎます。",
+    "La plantilla supera 256 MB o contiene demasiados elementos.",
+    "Le modèle dépasse 256 Mo ou contient trop d’éléments."
+  ],
+  "正在处理…": [
+    "Processing…",
+    "処理中…",
+    "Procesando…",
+    "Traitement en cours…"
+  ],
+  "正在导入模板…": [
+    "Importing template…",
+    "テンプレートを読み込み中…",
+    "Importando plantilla…",
+    "Import du modèle…"
+  ],
+  "此列表仅在本次运行中显示，不写入诊断日志。": [
+    "This list is kept for this session only and is not included in diagnostics.",
+    "この一覧は今回の実行中のみ保持され、診断ログには含まれません。",
+    "Esta lista solo se conserva durante la sesión y no se incluye en el diagnóstico.",
+    "Cette liste est conservée uniquement pour cette session et n’est pas incluse dans le diagnostic."
+  ],
+  "此目录没有隐藏项目": [
+    "This folder has no hidden items.",
+    "このフォルダに隠し項目はありません。",
+    "Esta carpeta no contiene elementos ocultos.",
+    "Ce dossier ne contient aucun élément masqué."
+  ],
+  "每行是一项参数，空格会保留，无需添加引号。文件和目录另外传递给应用，不执行 Shell 命令。": [
+    "Each row is one argument. Spaces are preserved; no quotes are needed. Files and folders are passed separately. Shell commands are not executed.",
+    "1行が1つの引数です。空白は保持され、引用符は不要です。ファイルとフォルダは別途渡されます。シェルコマンドは実行しません。",
+    "Cada fila es un argumento. Se conservan los espacios; no añadas comillas. Archivos y carpetas se pasan por separado. No se ejecutan comandos de shell.",
+    "Chaque ligne est un argument. Les espaces sont conservés, sans guillemets nécessaires. Les fichiers et dossiers sont transmis séparément. Aucune commande shell n’est exécutée."
+  ],
+  "永久删除默认关闭，每次执行仍需确认，不经过废纸篓。空白处不会出现删除操作。": [
+    "Permanent deletion is off by default and always requires confirmation. It bypasses Trash and is not offered on empty space.",
+    "完全削除は初期設定では無効で、毎回確認が必要です。ゴミ箱には入りません。空白部分には表示されません。",
+    "La eliminación permanente está desactivada por defecto y siempre requiere confirmación. No pasa por la Papelera ni aparece en espacios vacíos.",
+    "La suppression définitive est désactivée par défaut et exige toujours une confirmation. Elle ignore la Corbeille et n’est pas proposée sur un espace vide."
+  ],
+  "没有可用的操作目标。": [
+    "No target is available.",
+    "操作対象がありません。",
+    "No hay ningún destino disponible.",
+    "Aucune cible disponible."
+  ],
+  "点击菜单入口会在 Finder 打开目录。": [
+    "Choosing an entry opens the folder in Finder.",
+    "メニュー項目を選ぶと Finder でフォルダを開きます。",
+    "Al elegir una entrada se abre la carpeta en Finder.",
+    "Choisir une entrée ouvre le dossier dans Finder."
+  ],
+  "点开头的文件名仍会被 Finder 隐藏；此操作只修改隐藏属性，不更改文件名": [
+    "Finder still hides names beginning with a dot. This action changes the hidden attribute, not the filename.",
+    "先頭がドットの名前は Finder で引き続き非表示になります。この操作は隠し属性のみを変更し、名前は変更しません。",
+    "Finder sigue ocultando nombres que empiezan por punto. Esta acción cambia el atributo oculto, no el nombre.",
+    "Finder masque toujours les noms commençant par un point. Cette action modifie l’attribut masqué, pas le nom."
+  ],
+  "环境变量名不能重复": [
+    "Environment variable names must be unique.",
+    "環境変数名は重複できません。",
+    "Los nombres de variables de entorno no pueden repetirse.",
+    "Les noms des variables d’environnement doivent être uniques."
+  ],
+  "目录不可访问，请在目录快捷入口中重新选择": [
+    "The folder is unavailable. Choose it again in Folder Shortcuts.",
+    "フォルダにアクセスできません。フォルダショートカットで選び直してください。",
+    "La carpeta no está disponible. Vuelve a elegirla en Accesos a carpetas.",
+    "Le dossier est inaccessible. Sélectionnez-le à nouveau dans Raccourcis de dossiers."
+  ],
+  "目录授权不可用，请重新选择": [
+    "Folder access is unavailable. Choose the folder again.",
+    "フォルダへのアクセス許可を利用できません。選び直してください。",
+    "El permiso no está disponible. Vuelve a elegir la carpeta.",
+    "L’autorisation du dossier est indisponible. Sélectionnez-le à nouveau."
+  ],
+  "目标不适用": [
+    "The target is not applicable.",
+    "この対象には適用できません。",
+    "El destino no es válido.",
+    "La cible n’est pas applicable."
+  ],
+  "目标已删除或暂时不可访问": [
+    "The target was deleted or is temporarily unavailable.",
+    "対象が削除されたか、一時的にアクセスできません。",
+    "El destino se eliminó o no está disponible temporalmente.",
+    "La cible a été supprimée ou est temporairement inaccessible."
+  ],
+  "能否启动新实例以及如何处理参数，由目标应用决定。": [
+    "The target app decides whether to create a new instance and how to handle arguments.",
+    "新しいインスタンスの起動可否や引数の処理方法は対象アプリによって異なります。",
+    "La app de destino decide si crea una nueva instancia y cómo procesa los argumentos.",
+    "L’app cible détermine si elle crée une nouvelle instance et comment elle traite les arguments."
+  ],
+  "请先选择文件或文件夹": [
+    "Select a file or folder first.",
+    "先にファイルまたはフォルダを選択してください。",
+    "Selecciona primero un archivo o carpeta.",
+    "Sélectionnez d’abord un fichier ou dossier."
+  ],
+  "请等待当前操作完成": [
+    "Wait for the current action to finish.",
+    "現在の操作が完了するまでお待ちください。",
+    "Espera a que finalice la acción actual.",
+    "Attendez la fin de l’action en cours."
+  ],
+  "请等待当前操作完成后恢复默认设置": [
+    "Wait for the current action to finish before restoring defaults.",
+    "現在の操作が完了してから初期設定に戻してください。",
+    "Espera a que termine la acción antes de restaurar los ajustes.",
+    "Attendez la fin de l’action avant de rétablir les réglages par défaut."
+  ],
+  "请选择不超过 256 MB 的文档": [
+    "Choose a document no larger than 256 MB.",
+    "256 MB 以下の書類を選択してください。",
+    "Elige un documento de hasta 256 MB.",
+    "Choisissez un document de 256 Mo maximum."
+  ],
+  "请选择可访问的目录": [
+    "Choose an accessible folder.",
+    "アクセス可能なフォルダを選択してください。",
+    "Elige una carpeta accesible.",
+    "Choisissez un dossier accessible."
+  ],
+  "请选择文档文件": [
+    "Choose a document file.",
+    "書類ファイルを選択してください。",
+    "Elige un archivo de documento.",
+    "Choisissez un fichier de document."
+  ],
+  "请选择新文件的目标目录": [
+    "Choose the destination folder for the new file.",
+    "新規ファイルの作成先フォルダを選択してください。",
+    "Elige la carpeta de destino del nuevo archivo.",
+    "Choisissez le dossier de destination du nouveau fichier."
+  ],
+  "选中文件时传递全部选中项；空白处传递当前目录。应用需支持打开相应类型。": [
+    "All selected items are passed to the app. On empty space, the current folder is passed. The app must support those types.",
+    "選択項目をすべて渡します。空白部分では現在のフォルダを渡します。対象の種類に対応するアプリが必要です。",
+    "Se pasan todos los elementos seleccionados; en un espacio vacío se pasa la carpeta actual. La app debe admitir esos tipos.",
+    "Tous les éléments sélectionnés sont transmis à l’app. Sur un espace vide, le dossier actuel est transmis. L’app doit prendre en charge ces types."
+  ],
+  "选择允许 Clickport 执行文件操作的目录，可在设置中撤销。": [
+    "Choose a folder where Clickport may perform file actions. Access can be revoked in Settings.",
+    "Clickport のファイル操作を許可するフォルダを選択してください。設定から取り消せます。",
+    "Elige una carpeta donde Clickport pueda realizar acciones. Puedes revocar el acceso en Ajustes.",
+    "Choisissez un dossier où Clickport peut agir sur les fichiers. L’accès peut être révoqué dans Réglages."
+  ],
+  "隐藏后，重新运行应用可打开设置。": [
+    "After hiding the icon, reopen the app to access Settings.",
+    "アイコンを隠した後は、アプリを開き直すと設定を表示できます。",
+    "Tras ocultar el icono, vuelve a abrir la app para acceder a Ajustes.",
+    "Après avoir masqué l’icône, rouvrez l’app pour accéder aux réglages."
+  ],
+  "保存失败：%@": [
+    "Save failed: %@",
+    "保存できませんでした：%@",
+    "Error al guardar: %@",
+    "Échec de l’enregistrement : %@"
+  ],
+  "已复制 %@ 项路径": [
+    "Copied paths for %@ items",
+    "%@項目のパスをコピーしました",
+    "Rutas de %@ elementos copiadas",
+    "Chemins de %@ éléments copiés"
+  ],
+  "已完成 %@ / %@ 项": [
+    "Completed %@ / %@ items",
+    "%@ / %@項目が完了しました",
+    "Completados %@ de %@ elementos",
+    "%@ / %@ éléments terminés"
+  ],
+  "正在处理 %@ / %@ 项": [
+    "Processing %@ / %@ items",
+    "%@ / %@項目を処理中",
+    "Procesando %@ de %@ elementos",
+    "Traitement de %@ / %@ éléments"
+  ],
+  "文件类型：.%@": [
+    "File type: .%@",
+    "ファイル形式：.%@",
+    "Tipo de archivo: .%@",
+    "Type de fichier : .%@"
+  ],
+  "未完成的项目 · %@ 项": [
+    "Incomplete Items · %@",
+    "未完了の項目・%@件",
+    "Elementos no completados · %@",
+    "Éléments non terminés · %@"
+  ],
+  "查看全部失败项目（%@）…": [
+    "View All Failed Items (%@)…",
+    "失敗した項目をすべて表示（%@）…",
+    "Ver todos los fallos (%@)…",
+    "Voir tous les éléments en échec (%@)…"
+  ],
+  "永久删除 %@ 个项目？": [
+    "Permanently delete %@ items?",
+    "%@項目を完全に削除しますか？",
+    "¿Eliminar permanentemente %@ elementos?",
+    "Supprimer définitivement %@ éléments ?"
+  ],
+  "%@\n\n此操作不经过废纸篓，无法撤销。文件夹内的内容也会被删除。": [
+    "%@\n\nThis bypasses Trash and cannot be undone. Folder contents will also be deleted.",
+    "%@\n\nゴミ箱には移動せず、取り消せません。フォルダ内の内容も削除されます。",
+    "%@\n\nNo pasa por la Papelera y no se puede deshacer. También se elimina el contenido de las carpetas.",
+    "%@\n\nCette action ignore la Corbeille et ne peut pas être annulée. Le contenu des dossiers sera également supprimé."
+  ],
+  "目录：%@\n将显示直接包含的 %@ 个隐藏项目，不处理子目录内部。": [
+    "Folder: %@\nUnhides %@ immediate items. Contents of subfolders are not changed.",
+    "フォルダ：%@\n直下の隠し項目%@件を再表示します。サブフォルダの内部は変更しません。",
+    "Carpeta: %@\nSe mostrarán %@ elementos directos. No se modifica el contenido de las subcarpetas.",
+    "Dossier : %@\nAffiche %@ éléments directs. Le contenu des sous-dossiers n’est pas modifié."
+  ],
+  "请允许访问包含此目标的目录：%@": [
+    "Allow access to a folder containing this target: %@",
+    "この対象を含むフォルダへのアクセスを許可してください：%@",
+    "Permite el acceso a una carpeta que contenga este destino: %@",
+    "Autorisez l’accès à un dossier contenant cette cible : %@"
+  ],
+  "配置无效：%@": [
+    "Invalid configuration: %@",
+    "無効な構成：%@",
+    "Configuración no válida: %@",
+    "Configuration non valide : %@"
+  ],
+  "版本 %@（%@）": [
+    "Version %@ (%@)",
+    "バージョン %@（%@）",
+    "Versión %@ (%@)",
+    "Version %@ (%@)"
+  ],
+  "查看更新…": [
+    "View Updates…",
+    "アップデートを確認…",
+    "Ver actualizaciones…",
+    "Voir les mises à jour…"
+  ],
+  "查看更新 · 尚未配置": [
+    "Updates · Not Configured",
+    "アップデート・未設定",
+    "Actualizaciones · Sin configurar",
+    "Mises à jour · Non configurées"
+  ],
+  "反馈问题…": [
+    "Report an Issue…",
+    "問題を報告…",
+    "Informar de un problema…",
+    "Signaler un problème…"
+  ],
+  "反馈问题 · 尚未配置": [
+    "Feedback · Not Configured",
+    "フィードバック・未設定",
+    "Comentarios · Sin configurar",
+    "Commentaires · Non configurés"
+  ],
+  "更新和反馈入口会在浏览器打开，不自动下载或发送诊断日志。": [
+    "Update and feedback links open in your browser. They do not automatically download updates or send diagnostics.",
+    "アップデートとフィードバックのリンクはブラウザで開きます。自動ダウンロードや診断ログの送信は行いません。",
+    "Los enlaces se abren en el navegador. No descargan actualizaciones ni envían diagnósticos automáticamente.",
+    "Les liens s’ouvrent dans le navigateur, sans téléchargement automatique ni envoi du diagnostic."
+  ],
+  "暂时不可访问：可能已移动、离线或缺少权限，请重新选择。": [
+    "Temporarily unavailable: it may have moved, be offline or need permission. Choose it again.",
+    "現在アクセスできません。移動済み、オフライン、または権限不足の可能性があります。選び直してください。",
+    "No disponible: puede haberse movido, estar sin conexión o necesitar permiso. Vuelve a elegirlo.",
+    "Temporairement inaccessible : déplacé, hors ligne ou sans autorisation. Sélectionnez-le à nouveau."
+  ],
+  "已请求使用应用打开；复用了已有进程，启动参数和环境变量可能未生效。": [
+    "Open requested using an existing process. Launch arguments and environment variables may not have taken effect.",
+    "既存のプロセスで開くよう要求しました。起動引数と環境変数が反映されていない可能性があります。",
+    "Se solicitó abrir con un proceso existente. Es posible que los argumentos de inicio y las variables de entorno no se hayan aplicado.",
+    "L’ouverture a été demandée avec un processus existant. Les arguments de lancement et les variables d’environnement peuvent ne pas avoir été appliqués."
+  ],
+  "系统未找到登录项，可尝试重新启用；若仍失败，请重新安装应用。": [
+    "The system could not find the login item. Try enabling it again; if that fails, reinstall the app.",
+    "ログイン項目が見つかりません。再度有効にしてください。失敗する場合はアプリを再インストールしてください。",
+    "El sistema no encontró el ítem de inicio. Intenta activarlo de nuevo; si falla, reinstala la app.",
+    "Le système n’a pas trouvé l’élément d’ouverture. Essayez de le réactiver ; en cas d’échec, réinstallez l’app."
+  ],
+  "已请求隔空投送，请在系统面板中继续": [
+    "AirDrop requested. Continue in the system panel.",
+    "AirDrop をリクエストしました。システムパネルで続けてください。",
+    "Se solicitó AirDrop. Continúa en el panel del sistema.",
+    "AirDrop demandé. Continuez dans le panneau système."
+  ],
+  "系统隔空投送服务不可用": [
+    "The system AirDrop service is unavailable.",
+    "システムの AirDrop サービスを利用できません。",
+    "El servicio AirDrop del sistema no está disponible.",
+    "Le service AirDrop du système est indisponible."
+  ],
+  "请先完成当前隔空投送操作": [
+    "Finish the current AirDrop operation first.",
+    "現在の AirDrop 操作を先に完了してください。",
+    "Finaliza primero la operación actual de AirDrop.",
+    "Terminez d’abord l’opération AirDrop en cours."
+  ],
+  "删除目标": [
+    "Deletion targets",
+    "削除対象",
+    "Elementos que se eliminarán",
+    "Éléments à supprimer"
+  ],
+  "此操作不经过废纸篓，无法撤销。文件夹内的内容也会被删除。请核对下方完整目标清单。": [
+    "This bypasses the Trash and cannot be undone. Folder contents will also be deleted. Review the full list below.",
+    "ゴミ箱を経由せず、取り消せません。フォルダ内の内容も削除されます。以下の対象一覧をすべて確認してください。",
+    "Esta acción omite la Papelera y no se puede deshacer. También se eliminará el contenido de las carpetas. Revisa la lista completa a continuación.",
+    "Cette action ne passe pas par la Corbeille et ne peut pas être annulée. Le contenu des dossiers sera également supprimé. Vérifiez la liste complète ci-dessous."
+  ],
+  "上移 %@": [
+    "Move %@ up",
+    "%@ を上へ移動",
+    "Subir %@",
+    "Monter %@"
+  ],
+  "下移 %@": [
+    "Move %@ down",
+    "%@ を下へ移動",
+    "Bajar %@",
+    "Descendre %@"
+  ],
+  "编辑 %@": [
+    "Edit %@",
+    "%@ を編集",
+    "Editar %@",
+    "Modifier %@"
+  ],
+  "改名 %@": [
+    "Rename %@",
+    "%@ の名前を変更",
+    "Renombrar %@",
+    "Renommer %@"
+  ],
+  "移除 %@": [
+    "Remove %@",
+    "%@ を削除",
+    "Quitar %@",
+    "Retirer %@"
+  ],
+  "重新导入 %@": [
+    "Reimport %@",
+    "%@ を再読み込み",
+    "Volver a importar %@",
+    "Réimporter %@"
+  ],
+  "撤销目录授权 %@": [
+    "Revoke directory access for %@",
+    "%@ のフォルダアクセス権を取り消す",
+    "Revocar el acceso a la carpeta %@",
+    "Révoquer l’accès au dossier %@"
+  ],
+  "模板副本不可访问，请重新导入有效模板。": [
+    "The template copy is unavailable. Reimport a valid template.",
+    "テンプレートのコピーにアクセスできません。有効なテンプレートを再読み込みしてください。",
+    "La copia de la plantilla no está disponible. Vuelve a importar una plantilla válida.",
+    "La copie du modèle est inaccessible. Réimportez un modèle valide."
+  ],
+  "模板配置已更改，请重新导入": [
+    "The template configuration changed. Please import it again.",
+    "テンプレート設定が変更されました。再度読み込んでください。",
+    "La configuración de la plantilla cambió. Vuelve a importarla.",
+    "La configuration du modèle a changé. Veuillez le réimporter."
+  ],
+  "请选择普通配置文件": [
+    "Choose a regular configuration file.",
+    "通常の設定ファイルを選択してください。",
+    "Selecciona un archivo de configuración normal.",
+    "Choisissez un fichier de configuration ordinaire."
+  ],
+  "配置文件不能超过 4 MB": [
+    "Configuration files must not exceed 4 MB.",
+    "設定ファイルは 4 MB 以下にしてください。",
+    "Los archivos de configuración no pueden superar los 4 MB.",
+    "Les fichiers de configuration ne doivent pas dépasser 4 Mo."
+  ],
+  "诊断日志已导出": [
+    "Diagnostic log exported",
+    "診断ログを書き出しました",
+    "Registro de diagnóstico exportado",
+    "Journal de diagnostic exporté"
+  ],
+  "配置已导出": [
+    "Configuration exported",
+    "設定を書き出しました",
+    "Configuración exportada",
+    "Configuration exportée"
+  ],
+  "当前开发版本暂不支持传递启动参数和环境变量，已填写的配置会保留。": [
+    "This development build does not yet pass launch arguments or environment variables. Your configuration will be retained.",
+    "この開発版では起動引数と環境変数をまだ渡せません。入力した設定は保持されます。",
+    "Esta versión de desarrollo aún no transmite argumentos ni variables de entorno. Se conservará la configuración.",
+    "Cette version de développement ne transmet pas encore les arguments ni les variables d’environnement. Votre configuration sera conservée."
+  ],
+  "已请求使用应用打开；此开发版本尚不能传递启动参数和环境变量。": [
+    "Requested opening with the app; this development build cannot yet pass launch arguments or environment variables.",
+    "アプリで開くよう要求しました。この開発版では起動引数と環境変数をまだ渡せません。",
+    "Se solicitó abrir con la aplicación; esta versión de desarrollo aún no transmite argumentos ni variables de entorno.",
+    "Ouverture demandée dans l’application ; cette version de développement ne transmet pas encore les arguments ni les variables d’environnement."
+  ],
+  "正在导入配置…": [
+    "Importing configuration…",
+    "設定を読み込み中…",
+    "Importando configuración…",
+    "Importation de la configuration…"
+  ],
+  "配置已导入": [
+    "Configuration imported",
+    "設定を読み込みました",
+    "Configuración importada",
+    "Configuration importée"
+  ],
+  "读取期间设置已更改，请重新导入配置": [
+    "Settings changed while reading the file. Import the configuration again.",
+    "ファイルの読み込み中に設定が変更されました。設定をもう一度読み込んでください。",
+    "Los ajustes cambiaron mientras se leía el archivo. Vuelve a importar la configuración.",
+    "Les réglages ont changé pendant la lecture du fichier. Importez à nouveau la configuration."
+  ],
+  "配置已恢复默认": [
+    "Configuration reset to defaults",
+    "設定をデフォルトに戻しました",
+    "Configuración restablecida a los valores predeterminados",
+    "Configuration réinitialisée aux valeurs par défaut"
+  ],
+  "操作配置已更改，请从 Finder 重新发起": [
+    "The action settings changed. Start the action again from Finder.",
+    "操作の設定が変更されました。Finder からもう一度実行してください。",
+    "La configuración de la acción ha cambiado. Vuelve a iniciarla desde Finder.",
+    "Les réglages de cette action ont changé. Relancez-la depuis le Finder."
+  ]
+}
