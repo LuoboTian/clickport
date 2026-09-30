@@ -817,3 +817,32 @@ import Darwin
     #expect(calls.values.allSatisfy { $0 == 1 })
     #expect(largePlan.shortcuts.first { $0.reference == .builtin(.airDrop) }?.enabled == true)
 }
+
+@Test func launchRequestPreservesTypedValuesAndRejectsTampering() throws {
+    let entry = ApplicationEntry(name: "Fixture", url: URL(fileURLWithPath: "/Applications/Fixture.app"),
+                                 arguments: ["", "two words", "中文", "$(literal)"], environment: ["VALUE": "a=b 中文"], newInstance: true)
+    let request = try LaunchRequest(entry: entry, targets: [URL(fileURLWithPath: "/tmp/中文 %20.txt")])
+    let decoded = try LaunchRequest.decode(JSONEncoder().encode(request))
+    #expect(decoded.entry == entry)
+    #expect(decoded.targets == request.targets)
+    var modified = request
+    modified.entry.arguments.append("extra")
+    #expect(throws: (any Error).self) { try modified.validated() }
+    modified = request; modified.createdAt = Date().addingTimeInterval(-31)
+    #expect(throws: (any Error).self) { try modified.validated() }
+    modified = request; modified.targets = [URL(string: "file://remote/test")!]
+    #expect(throws: (any Error).self) { try modified.validated() }
+    #expect(throws: (any Error).self) { try LaunchRequest.decode(Data(repeating: 0, count: LaunchRequest.maximumBytes + 1)) }
+}
+
+@Test func launchRequestRejectsDisabledAndOversizedConfiguration() throws {
+    var entry = ApplicationEntry(name: "Fixture", url: URL(fileURLWithPath: "/Applications/Fixture.app"), enabled: false)
+    let targets = [URL(fileURLWithPath: "/tmp/test.txt")]
+    #expect(throws: (any Error).self) { try LaunchRequest(entry: entry, targets: targets).validated() }
+    entry.enabled = true; entry.arguments = Array(repeating: "a", count: 257)
+    #expect(throws: (any Error).self) { try LaunchRequest(entry: entry, targets: targets).validated() }
+    entry.arguments = [String(repeating: "a", count: LaunchRequest.maximumBytes)]
+    #expect(throws: (any Error).self) { try LaunchRequest(entry: entry, targets: targets).validated() }
+    entry.arguments = []
+    #expect(throws: (any Error).self) { try LaunchRequest(entry: entry, targets: []).validated() }
+}

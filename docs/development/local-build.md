@@ -35,7 +35,7 @@ Scripts/package-dmg.sh Release
 
 V1 仍在开发和验收中。当前证据以 [V1 验证清单](v1-verification.md) 为准，不能用构建成功代替实机验收。
 
-- 共享模块 54 项测试通过，覆盖路径、菜单配置、持久化、模板创建、取消、批量错误和请求队列等边界。
+- 共享模块 56 项测试通过，覆盖路径、菜单配置、持久化、模板创建、取消、批量错误和请求队列等边界。
 - `bash Scripts/test-appkit.sh` 检查共享会话的文件权限持有和回调释放，不展示或代替真实 AirDrop 面板。
 - 真实 Finder 已验证路径复制、基础 JSON 与导入 DOCX/XLSX/PPTX 新建、隐藏与直接子项取消隐藏、宿主退出后恢复；Word/Excel/PowerPoint 可打开对应测试文档。
 - 原生设置已验证菜单草稿保存/放弃与重启保留、精确目录授权/撤销、登录项注册/注销、无效配置导入保留原值、模板失效提示和重导入恢复。
@@ -74,3 +74,9 @@ V1 仍在开发和验收中。当前证据以 [V1 验证清单](v1-verification.
 应用图标位于 `Apps/Clickport/Resources/Assets.xcassets/AppIcon.appiconset`，包含 macOS 的 10 个尺寸与倍率。资源已纳入主应用的 Resources 阶段，由 Asset Catalog 编译生成 `AppIcon.icns` 与 `Assets.car`。
 
 从仓库根目录运行 `swift Scripts/generate-app-icon.swift` 可重新生成。脚本用 AppKit 绘制原创几何图形，无外部素材或额外 Swift 依赖。生成物随源码保存，正常构建不需要运行生成脚本。当前为开发版本图形，最终品牌视觉仍可调整。
+
+## Launch helper probe
+
+`LaunchHelper` is an embedded XPC target installed at `Contents/XPCServices`. The build script signs it before the Finder extension and host. The helper runs with ordinary user privileges; the host and extension remain sandboxed.
+
+After building Release, run `bash Scripts/build-launch-helper-probe.sh Release` to build trusted and rejected sandboxed test applications in ignored `build/launch-helper-probe`. Run these through their UI; they do not read product configuration. Quit previous probe and receiver instances before rebuilding. Signing logs remain local in build.

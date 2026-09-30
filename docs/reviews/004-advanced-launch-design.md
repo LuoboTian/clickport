@@ -1,8 +1,8 @@
-# 高级启动助手方案 · 待确认
+# 高级启动助手方案 · 实施中
 
 日期：2026-09-29。关联 FR-01 / FR-02 / FR-11 / FR-13。
 
-本文件是具体设计提案，不是实施批准。当前主应用及 Finder 扩展继续保留 App Sandbox；尚未加入助手 Target、放宽 entitlement 或安装后台服务。用户此前的架构确认问题尚未收到答案。
+2026-09-30 用户明确授权在独立 feature 分支新增并集成启动助手，随后再次要求开始开发。主应用及 Finder 扩展保留 App Sandbox；先验证内嵌 XPC 服务，再接入产品。正式验收以接收器及 Finder 实测为准。
 
 ## 需要解决的问题
 
@@ -50,3 +50,9 @@
 6. 更新当前限制提示；只有实机证据通过才将 FR-02 标为已验收。
 
 若用户不接受新增进程权限，需要重新决定高级启动架构或明确调整需求；代理不能自行把这一能力移出 V1。
+
+## Implementation update — 2026-09-30
+
+The embedded XPC service is implemented and integrated for application entries with arguments or environment variables. Both ends enforce the same signing team and exact peer identifier using [Apple's code-signing requirement API](https://developer.apple.com/documentation/foundation/nsxpcconnection/setcodesigningrequirement(_:)). The existing host request handler retains file scopes while waiting. Unknown outcomes are not retried automatically.
+
+Native probe and Finder evidence, including the corrected Swift 6 error-callback assertion, are recorded in the [verification log](../development/v1-verification.md). Untested acceptance items remain open.

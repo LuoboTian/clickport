@@ -299,9 +299,9 @@ final class AppModel {
                       FileManager.default.fileExists(atPath: entry.url.path) else {
                     throw ConfigurationError.invalid(L10n.text("应用已移动或卸载，请在打开方式中重新选择"))
                 }
-                _ = try await systemActions.open(request.context.pathTargets, with: entry)
-                resultMessage = !entry.arguments.isEmpty || !entry.environment.isEmpty
-                    ? L10n.text("已请求使用应用打开；此开发版本尚不能传递启动参数和环境变量。")
+                let reused = try await systemActions.open(request.context.pathTargets, with: entry)
+                resultMessage = reused && (!entry.arguments.isEmpty || !entry.environment.isEmpty)
+                    ? L10n.text("已交给运行中的应用；启动参数和环境变量只在新进程启动时生效。")
                     : L10n.text("已请求使用应用打开")
             case .template(let id):
                 guard let template = configuration.templates.first(where: { $0.id == id && $0.enabled }) else { return }

@@ -1241,18 +1241,6 @@
     "Configuración exportada",
     "Configuration exportée"
   ],
-  "当前开发版本暂不支持传递启动参数和环境变量，已填写的配置会保留。": [
-    "This development build does not yet pass launch arguments or environment variables. Your configuration will be retained.",
-    "この開発版では起動引数と環境変数をまだ渡せません。入力した設定は保持されます。",
-    "Esta versión de desarrollo aún no transmite argumentos ni variables de entorno. Se conservará la configuración.",
-    "Cette version de développement ne transmet pas encore les arguments ni les variables d’environnement. Votre configuration sera conservée."
-  ],
-  "已请求使用应用打开；此开发版本尚不能传递启动参数和环境变量。": [
-    "Requested opening with the app; this development build cannot yet pass launch arguments or environment variables.",
-    "アプリで開くよう要求しました。この開発版では起動引数と環境変数をまだ渡せません。",
-    "Se solicitó abrir con la aplicación; esta versión de desarrollo aún no transmite argumentos ni variables de entorno.",
-    "Ouverture demandée dans l’application ; cette version de développement ne transmet pas encore les arguments ni les variables d’environnement."
-  ],
   "正在导入配置…": [
     "Importing configuration…",
     "設定を読み込み中…",
@@ -1282,5 +1270,29 @@
     "操作の設定が変更されました。Finder からもう一度実行してください。",
     "La configuración de la acción ha cambiado. Vuelve a iniciarla desde Finder.",
     "Les réglages de cette action ont changé. Relancez-la depuis le Finder."
+  ],
+  "启动结果无法确认，请检查目标应用后再重试。": [
+    "The launch result is unknown. Check the target application before trying again.",
+    "起動結果を確認できません。対象アプリを確認してから再試行してください。",
+    "No se pudo confirmar el inicio. Comprueba la aplicación antes de volver a intentarlo.",
+    "Le résultat du lancement est inconnu. Vérifiez l’application avant de réessayer."
+  ],
+  "启动助手未能完成请求，请检查应用位置与本机签名。": [
+    "The launch helper could not complete the request. Check the application location and local signature.",
+    "起動ヘルパーが要求を完了できませんでした。アプリの場所とローカル署名を確認してください。",
+    "El asistente de inicio no pudo completar la solicitud. Comprueba la ubicación y la firma local.",
+    "L’assistant de lancement n’a pas pu terminer la demande. Vérifiez l’emplacement et la signature locale."
+  ],
+  "已交给运行中的应用；启动参数和环境变量只在新进程启动时生效。": [
+    "Sent to the running application. Arguments and environment variables apply only when a new process starts.",
+    "実行中のアプリに渡しました。引数と環境変数は新しいプロセスの起動時のみ適用されます。",
+    "Enviado a la aplicación en ejecución. Los argumentos y las variables de entorno solo se aplican al iniciar un proceso nuevo.",
+    "Transmis à l’application en cours. Les arguments et les variables d’environnement ne s’appliquent qu’au démarrage d’un nouveau processus."
+  ],
+  "启动参数和环境变量由内置助手传递，仅对新启动的进程生效。": [
+    "The built-in helper passes arguments and environment variables to newly started processes.",
+    "内蔵ヘルパーは新しく起動するプロセスに引数と環境変数を渡します。",
+    "El asistente integrado pasa argumentos y variables de entorno a los procesos nuevos.",
+    "L’assistant intégré transmet les arguments et les variables d’environnement aux nouveaux processus."
   ]
 }

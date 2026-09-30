@@ -42,7 +42,7 @@ if [[ "${2:-}" != '--unsigned' ]]; then
   # Xcode can update a shared SwiftPM resource bundle after reusing the outer
   # extension seal during an incremental build. Seal inside out only after all
   # copies finish, preserving the entitlements produced by this build.
-  for product in "$extension" "$app"; do
+  for product in "$app/Contents/XPCServices/LaunchHelper.xpc" "$extension" "$app"; do
     if ! codesign --force --sign "$identity" --timestamp=none --preserve-metadata=identifier,entitlements,flags,runtime "$product" >> build/build.log 2>&1; then
       echo 'Final local signing failed. Inspect build/build.log.' >&2
       exit 1
