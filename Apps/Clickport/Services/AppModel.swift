@@ -36,6 +36,7 @@ final class AppModel {
             let store = try SharedContainer.store()
             self.store = store
             configuration = try store.load()
+            if configuration.provisionDefaultApplications() { try store.save(configuration) }
             configurationReady = true
         } catch { errorMessage = error.localizedDescription }
         guard hostLock != nil else { return }
@@ -299,7 +300,10 @@ final class AppModel {
                       FileManager.default.fileExists(atPath: entry.url.path) else {
                     throw ConfigurationError.invalid(L10n.text("应用已移动或卸载，请在打开方式中重新选择"))
                 }
-                let reused = try await systemActions.open(request.context.pathTargets, with: entry)
+                let targets = try entry.openingTargets(request.context.pathTargets) {
+                    try $0.resourceValues(forKeys: [.isDirectoryKey]).isDirectory == true
+                }
+                let reused = try await systemActions.open(targets, with: entry)
                 resultMessage = reused && (!entry.arguments.isEmpty || !entry.environment.isEmpty)
                     ? L10n.text("已交给运行中的应用；启动参数和环境变量只在新进程启动时生效。")
                     : L10n.text("已请求使用应用打开")

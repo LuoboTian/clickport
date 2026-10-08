@@ -27,6 +27,23 @@ public struct ApplicationEntry: Codable, Identifiable, Equatable, Sendable {
         self.arguments = arguments; self.environment = environment; self.newInstance = newInstance
     }
 }
+extension ApplicationEntry {
+    public static let terminal = ApplicationEntry(
+        id: UUID(uuidString: "00000000-0000-0000-0000-000000000010")!,
+        name: "Terminal", url: URL(fileURLWithPath: "/System/Applications/Utilities/Terminal.app"))
+
+    public var isSystemTerminal: Bool { url.standardizedFileURL == Self.terminal.url }
+
+    /// Terminal accepts executable documents too; this entry only opens directories.
+    public func openingTargets(_ targets: [URL], isDirectory: (URL) throws -> Bool) throws -> [URL] {
+        guard isSystemTerminal else { return targets }
+        var seen = Set<URL>()
+        return try targets.map { url in
+            guard url.isLocalFileURL else { throw TargetError.notFileURL }
+            return try isDirectory(url) ? url : url.deletingLastPathComponent()
+        }.filter { seen.insert($0.standardizedFileURL).inserted }
+    }
+}
 public struct DirectoryEntry: Codable, Identifiable, Equatable, Sendable {
     public var id: UUID
     public var name: String
@@ -59,13 +76,24 @@ public struct Configuration: Codable, Equatable, Sendable {
     public static let maximumBytes = 4 * 1024 * 1024
     public var schemaVersion = 1
     public var showMenuBar = true
-    public var applications: [ApplicationEntry] = []
+    public var applications: [ApplicationEntry] = [.terminal]
+    public var defaultApplicationsVersion: Int? = 1
     public var directories: [DirectoryEntry] = []
     public var templates = TemplateEntry.defaults
     public var enabledActions: Set<BuiltinAction> = [.copyPath, .hide, .unhide, .unhideChildren, .airDrop]
     public var groups = MenuGroup.allCases
     public var shortcuts: [ActionReference] = [.builtin(.copyPath)]
     public init() {}
+
+    /// Called once by the host on upgrade, never while rendering Finder menus.
+    public mutating func provisionDefaultApplications() -> Bool {
+        guard defaultApplicationsVersion == nil else { return false }
+        if !applications.contains(where: { $0.isSystemTerminal || $0.id == ApplicationEntry.terminal.id }) {
+            applications.append(.terminal)
+        }
+        defaultApplicationsVersion = 1
+        return true
+    }
 
     /// Commit an asynchronous import without resurrecting removed entries or
     /// overwriting names and enabled states edited while its copy was running.

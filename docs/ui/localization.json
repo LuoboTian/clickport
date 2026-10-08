@@ -1294,5 +1294,11 @@
     "内蔵ヘルパーは新しく起動するプロセスに引数と環境変数を渡します。",
     "El asistente integrado pasa argumentos y variables de entorno a los procesos nuevos.",
     "L’assistant intégré transmet les arguments et les variables d’environnement aux nouveaux processus."
+  ],
+  "选中文件时传递全部选中项；空白处传递当前目录。系统终端始终打开目录，文件使用其所在目录。": [
+    "Selected items are passed to the app; blank areas use the current folder. System Terminal opens folders, using the parent folder for files.",
+    "選択項目をアプリに渡し、空白部分では現在のフォルダを使用します。システムのターミナルはフォルダを開き、ファイルの場合は親フォルダを使用します。",
+    "Los elementos seleccionados se envían a la app; las áreas vacías usan la carpeta actual. Terminal abre carpetas y usa la carpeta contenedora para archivos.",
+    "Les éléments sélectionnés sont transmis à l’app ; les zones vides utilisent le dossier actuel. Terminal ouvre les dossiers et utilise le dossier parent pour les fichiers."
   ]
 }

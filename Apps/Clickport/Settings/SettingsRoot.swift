@@ -173,7 +173,7 @@ struct SettingsRoot: View {
                 guard let url = choose(files: true, directories: false, types: [.application]) else { return }
                 update { $0.applications.append(.init(name: url.deletingPathExtension().lastPathComponent, url: url)) }
             }
-            Text("选中文件时传递全部选中项；空白处传递当前目录。应用需支持打开相应类型。").font(.caption).foregroundStyle(.secondary)
+            Text("选中文件时传递全部选中项；空白处传递当前目录。系统终端始终打开目录，文件使用其所在目录。").font(.caption).foregroundStyle(.secondary)
         }
     }
     private var operations: some View {
