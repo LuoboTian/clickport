@@ -199,6 +199,7 @@
 "读取期间设置已更改，请重新导入配置" = "Los ajustes cambiaron mientras se leía el archivo. Vuelve a importar la configuración.";
 "退出 Clickport" = "Salir de Clickport";
 "选中文件时传递全部选中项；空白处传递当前目录。应用需支持打开相应类型。" = "Se pasan todos los elementos seleccionados; en un espacio vacío se pasa la carpeta actual. La app debe admitir esos tipos.";
+"选中文件时传递全部选中项；空白处传递当前目录。系统终端始终打开目录，文件使用其所在目录。" = "Los elementos seleccionados se envían a la app; las áreas vacías usan la carpeta actual. Terminal abre carpetas y usa la carpeta contenedora para archivos.";
 "选择允许 Clickport 执行文件操作的目录，可在设置中撤销。" = "Elige una carpeta donde Clickport pueda realizar acciones. Puedes revocar el acceso en Ajustes.";
 "通用" = "General";
 "配置" = "Configuración";

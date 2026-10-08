@@ -846,3 +846,36 @@ import Darwin
     entry.arguments = []
     #expect(throws: (any Error).self) { try LaunchRequest(entry: entry, targets: []).validated() }
 }
+
+@Test func defaultTerminalUpgradePreservesUserChoices() throws {
+    var legacy = Configuration()
+    legacy.applications = []
+    var object = try #require(JSONSerialization.jsonObject(with: JSONEncoder().encode(legacy)) as? [String: Any])
+    object.removeValue(forKey: "defaultApplicationsVersion")
+    var upgraded = try Configuration.decode(JSONSerialization.data(withJSONObject: object))
+    let didUpgrade = upgraded.provisionDefaultApplications()
+    #expect(didUpgrade)
+    #expect(upgraded.applications == [.terminal])
+    upgraded.applications.removeAll()
+    var reloaded = try Configuration.decode(JSONEncoder().encode(upgraded))
+    let didRepeat = reloaded.provisionDefaultApplications()
+    #expect(!didRepeat)
+    #expect(reloaded.applications.isEmpty)
+    legacy.defaultApplicationsVersion = nil
+    var disabled = ApplicationEntry.terminal
+    disabled.enabled = false
+    legacy.applications = [disabled]
+    let didPreserve = legacy.provisionDefaultApplications()
+    #expect(didPreserve)
+    #expect(legacy.applications == [disabled])
+}
+
+@Test func terminalOpensDirectoriesWithoutExecutingSelectedScripts() throws {
+    let folder = URL(fileURLWithPath: "/fixture/中文 folder", isDirectory: true)
+    let script = folder.appendingPathComponent("example.command")
+    let text = folder.appendingPathComponent("notes.txt")
+    let targets = try ApplicationEntry.terminal.openingTargets([script, text, folder]) { $0 == folder }
+    #expect(targets == [folder])
+    let editor = ApplicationEntry(name: "Editor", url: URL(fileURLWithPath: "/Applications/Editor.app"))
+    #expect(try editor.openingTargets([script]) { _ in false } == [script])
+}

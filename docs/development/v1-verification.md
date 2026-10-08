@@ -543,3 +543,7 @@ AppKit 共享服务生命周期检查重新通过：延迟释放、重复服务�
 - Removed the separator between shortcuts and submenus. Actual file and blank-folder menu accessibility trees now place these entries consecutively. The tool could not capture an expanded Finder menu screenshot, so final visual spacing still needs human confirmation.
 - 56 shared tests pass, including tampered/expired requests, remote file URLs, disabled entries and size limits. AppKit sharing lifecycle checks pass. Release build and strict nested-signature verification pass.
 - Still pending: real disconnect/timeout and no-retry checks, other target applications, external/network volumes and long-lived file access, minimum OS, public signing and upgrade/uninstall acceptance. This is not full V1 acceptance.
+
+## 默认系统终端 · 2026-09-30
+
+FR-01：新增默认 Terminal，主应用加载旧配置时一次性补入并保存。58 项共享测试通过，包含旧配置迁移、禁用保留、删除后不重复补入、脚本转换为父目录和目录去重。签名 Release 构建通过。实际 Finder → Terminal 的目录定位与跨机器行为尚待实机验收；不将编译或单测作为实机证据。

@@ -199,6 +199,7 @@
 "读取期间设置已更改，请重新导入配置" = "Settings changed while reading the file. Import the configuration again.";
 "退出 Clickport" = "Quit Clickport";
 "选中文件时传递全部选中项；空白处传递当前目录。应用需支持打开相应类型。" = "All selected items are passed to the app. On empty space, the current folder is passed. The app must support those types.";
+"选中文件时传递全部选中项；空白处传递当前目录。系统终端始终打开目录，文件使用其所在目录。" = "Selected items are passed to the app; blank areas use the current folder. System Terminal opens folders, using the parent folder for files.";
 "选择允许 Clickport 执行文件操作的目录，可在设置中撤销。" = "Choose a folder where Clickport may perform file actions. Access can be revoked in Settings.";
 "通用" = "General";
 "配置" = "Configuration";
